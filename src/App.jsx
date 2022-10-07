@@ -11,7 +11,7 @@ function App() {
   const [imgB, setImgB] = useState([...imgCamila])
   const [detalhesModulo, setDetalhesModulo] = useState([])
   const [detalhesPergunta, setDetalhesPergunta] = useState(0)
-  const [close, setClose] = useState(false)
+  const [close, setClose] = useState(true)
 
   const breakPoints = [{ wideth: 1, itemToShow: 1 }]
 
@@ -120,10 +120,12 @@ function App() {
           <p><b className='title10'>GARANTA SUA VAGA</b><span><br /></span></p>
           <p><b className='subtitle10'>COMECE AGORA E RECEBA</b><span><br /></span></p>
           <div className='garantias10'> {receba.map((r, i) => <div className='flex10'> <div className='icon10'><BsCheckLg /></div>  <p className='text10' key={i}> {r} </p> </div>)}</div>
-          <h3> De: <s> R$ 697</s></h3>
+          <h3> De: <s className='line'> R$ 697</s></h3>
           <h3>por até</h3>
           <h3>12x R$ 19,66</h3>
+          <div className='button10'>
           <button className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
+          </div>
           <h3>Ou R$ 197 à vista</h3>
           <h3>ESSA OFERTE LIMITADA POR VAGAS</h3>
           <span className='title10'>VAGAS 77% PREENCHIDAS</span>

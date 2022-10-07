@@ -11,11 +11,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Vite + React</title>
+    <!-- Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '689228652411921');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=689228652411921&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+    </script>
 </head>
 
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <a href="https://api.whatsapp.com/send?phone=5532988468403&text=Eu%20quero%20fazer%20uma%20compra. %20Pode%20me%20ajudar?" target="_blank" style="position:fixed; width:60px; height:60px; bottom:40px; right:40px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; box-shadow: 2px 2px 3px #999; z-index:100; padding: 0px;">
+        <img class="my-float" style="width: 60%; margin-top:13px; margin-left: 3px;" src="https://camilapegado.com.br/wp-content/uploads/2022/02/whatsapp-icone-2-1020x1024-1.png">
+        </img>
+    </a>
+    <div id="root">
+    </div>
+    <iframe width="1" height="1" src="https://go.hotmart.com/C70041567X?ap=3995">
+                                </iframe>
+    <script type="module" src="/src/main.jsx">
+    </script>
 </body>
 
 </html>
