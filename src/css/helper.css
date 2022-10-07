@@ -1,0 +1,510 @@
+.direction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.opacity {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.35;
+}
+
+.yellow {
+    color: var(--cor-amarelo-padrao);
+    text-shadow: 0px 1px rgb(152, 152, 80);
+}
+
+.padding-y {
+    padding: 5% 0;
+}
+
+.video {
+    width: 300px;
+    height: 170px;
+    margin: 3%;
+}
+
+.buttonSub {
+    background-color: var( --cor-amarelo-padrao);
+    margin: 10% 0 10% 0;
+    border-radius: 5px;
+    border: none;
+    padding: 10% 10% 10% 10%;
+    font-weight: 500;
+    font-family: 'sora';
+    font-size: 18px;
+    width: 320px;
+    height: 92px;
+}
+
+.box450 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 360px;
+    padding-top: 10%;
+    margin: 0 10px 10px 10px;
+}
+
+.card-1 {
+    background-image: url("../img/mobile/MOBILE_BG-LNP_VENDAS01_HERO-V00.1.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.felx-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 55% 0 0 0;
+}
+
+.card-2 {
+    background-image: url("../img//mobile/MOBILE_BG-LNP_VENDAS01_CURSO_V00.1.jpg.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.felx-col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 100% 0 20% 0;
+}
+
+.card2-h3 {
+    margin-top: 20%;
+}
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20% 0 20% 0;
+}
+
+.grid-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card3-h3 {
+    padding: 0 15%;
+}
+
+.box150 {
+    background-image: linear-gradient(180deg, #0095AD1F 0%, #FAFAFA00 100%);
+    height: 150px;
+    width: 130px;
+    margin: 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.box70 {
+    fill: #006778;
+    height: 70px;
+    width: 70px;
+}
+
+.left {
+    text-align: left;
+}
+
+.card-4 {
+    background-image: url("../img/mobile/MOBILE_BG-LNP_VENDAS01_S03-V00.1.jpg.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 95% 5% 0 5%;
+}
+
+.card-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5% 10% 5%;
+}
+
+.card5-h3 {
+    margin-top: 20%;
+}
+
+.imgAluno {
+    border-radius: 25px;
+    width: 270px;
+    max-height: 430px;
+}
+
+.card-6 {
+    background-color: var(--cor-azul-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5% 10% 5%;
+}
+
+.card6-h3 {
+    color: #fff;
+}
+
+.card-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 7% 10% 7%;
+}
+
+.img7 {
+    width: 360px;
+    height: 230px;
+}
+
+.card-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5% 20% 5%;
+    margin-top: 20%;
+}
+
+.flex8 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10% 0% 0% 3%;
+}
+
+.map8 {
+    width: 150px;
+    margin: 3px;
+}
+
+.img8 {
+    height: 220px;
+    border-radius: 5px;
+}
+
+.button8 {
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: var(--cor-azul-texto);
+    padding: 5px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10% 20% 10%;
+}
+
+.img9 {
+    height: 260px;
+    border-radius: 5px;
+    margin: 5% 5% 5% 0%;
+}
+
+.icon9 {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+.title9 {
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.text9 {
+    font-size: 14px;
+}
+
+.flex9 {
+    display: flex;
+}
+
+.card-10 {
+    background-color: var(--cor-azul-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25% 5% 7% 5%;
+}
+
+.box10 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 7% 3% 7% 3%;
+}
+
+.garantias10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5%;
+}
+
+.title10 {
+    font-weight: 800;
+    line-height: 1.4em;
+}
+
+.subtitle10 {
+    font-weight: 500;
+}
+
+.flex10 {
+    display: flex;
+    width: 90%;
+}
+
+.icon10 {
+    color: var(--cor-amarelo-padrao);
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-self: center;
+    margin: 0 3% 0 0;
+}
+
+.text10 {
+    color: var( --cor-azul-texto2);
+    font-weight: 500;
+    margin: 5px 20px 5px 0;
+    text-align: left;
+}
+
+.card-11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 1% 7% 1%;
+}
+
+.video11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 1% 7% 1%;
+}
+
+.img12 {
+    width: 270px;
+    max-height: 430px;
+}
+
+.card-13 {
+    background-image: url("../img/mobile/MOBILE-BG-LNP_VENDAS01_BIO-V00.jpg.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 95% 3% 7% 3%;
+}
+
+.flex13 {
+    background-color: rgb(250, 250, 250, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 7% 1% 7% 1%;
+}
+
+.professora {
+    padding: 3% 5% 3% 5%;
+}
+
+.card-15 {
+    background-color: var(--cor-azul-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 1% 7% 1%;
+}
+
+.title15 {
+    color: #fff;
+}
+
+.text15 {
+    color: var(--cor-amarelo-padrao);
+    font-weight: 500;
+}
+
+.card-16 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 10% 7% 10%;
+}
+
+.text16 {
+    text-align: left;
+}
+
+.card-17 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7%;
+}
+
+.flex-17 {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.button17 {
+    color: var(--cor-azul-texto2);
+    border: none;
+    background: #fff;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    justify-items: left;
+}
+
+.text17 {
+    text-align: left;
+}
+
+.icon17 {
+    color: var(--cor-azul-texto2);
+    width: 14px;
+    height: 14px;
+}
+
+.text172 {
+    text-align: left;
+    color: var(--cor-amarelo-padrao);
+}
+
+.icon172 {
+    color: var(--cor-amarelo-padrao);
+    width: 14px;
+    height: 14px;
+}
+
+.footer {
+    opacity: 0.5;
+    font-size: 14px;
+    padding: 5%;
+    font-weight: 300;
+}
+
+.dialogStyles {
+    width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogCloseButtonStyles {
+    background-color: var(--cor-azul-texto);
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 5% 5% 0% 5%;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.dialogLabel {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.dialogHead {
+    background-color: var(--cor-azul-texto);
+}
+
+.dialogTitle {
+    color: #fff;
+}
+
+.dialogText {
+    color: #fff;
+    padding: 0 5% 5% 5%;
+}
+
+.dialogButtonSub {
+    background-color: var( --cor-amarelo-padrao);
+    margin: 5% 0% 0% 0%;
+    border-radius: 5px;
+    border: none;
+    padding: 10% 5% 10% 5%;
+    font-weight: 500;
+    font-family: 'sora';
+    font-size: 18px;
+    height: 92px;
+}
+
+@media screen and (min-width: 1000px) {
+    .card-1 {
+        background-image: url("../img/BG-HERO-VENDAS01-LNP-V003-1.jpg.webp");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+        width: 100vw;
+    }
+    .felx-col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 10%;
+    }
+}
