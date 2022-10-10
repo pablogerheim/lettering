@@ -504,6 +504,27 @@
     height: 92px;
 }
 
+.imgwwapp {
+    width: 60%;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.linkwwapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    padding: 0px;
+}
+
 @media screen and (min-width: 1000px) {
     .card-1 {
         background-image: url("../img/BG-HERO-VENDAS01-LNP-V003-1.jpg.webp");

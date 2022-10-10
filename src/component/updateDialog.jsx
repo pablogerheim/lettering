@@ -1,23 +1,36 @@
 import '../css/helper.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { BiArrowBack } from 'react-icons/Bi';
 
 function UpdateDialog({ setClose }) {
 
     const [name, setName] = useState('');
-    const [password, setPassword] = useState('');
-    const [access, setAccess] = useState('');
+    const [email, setEmail] = useState('');
+    const [numero, setNumero] = useState('');
 
-    useEffect(() => {
-        startUpdate()
-    }, [])
+    ! function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '896121291775054');
 
-    const startUpdate = async () => {
+    const handleSubmit = async () => {
 
-    }
-
-    const update = async () => {
-
+        fbq('track', 'Lead');
+        window.location.href = `https://go.hotmart.com/C70041567X?ap=30cc&email=${email}&name=${name}&phonenumber=${numero}`;  //&${'current_path'}
     }
 
     return (
@@ -29,42 +42,35 @@ function UpdateDialog({ setClose }) {
                 >
                     <BiArrowBack />
                 </button>
-                <h3 className='dialogTitle'>CRIE SEU ACESSO AGORA</h3>
+                <h3 className='dialogTitle'>CRIE SEU ACESSO AGORA </h3>
                 <p className='dialogText'>Digite os dados que você usará para acessar o Curso Lettering na Prática.</p>
-
             </div>
-            
             <div className='dialog'>
                 <label className="dialogLabel">
                     Digite seu Nome
                     <input
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className=""
                     />
                 </label>
-
                 <label className="dialogLabel">
                     Digite seu e-mail
                     <input
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        className=""
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                 </label>
                 <label className="dialogLabel">
                     Digite seu WhatsApp com DDD
-
                     <input
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        className=""
+                        value={numero}
+                        onChange={(e) => setNumero(e.target.value)}
                     />
-   
+
                 </label>
                 <button
                     className='dialogButtonSub'
-                    onClick={update}
+                    onClick={handleSubmit}
                 >
                     Continuar inscrição {'>>'}
                 </button>

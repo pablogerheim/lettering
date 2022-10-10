@@ -51,11 +51,12 @@ function App() {
   return (<>
     {close || <UpdateDialog setClose={setClose} />}
     <div className={close ? "direction" : "opacity"}>
+
       <section className="card-1 ">
         <div className="felx-col-1">
           <h1><span className='yellow'>Curso de Lettering:</span>  Aprenda a fazer artes lindas<span className='yellow'> em até 30 dias</span>  mesmo que você seja iniciante.</h1>
           <h2 className='padding-y'>Junte-se a mais de 1.500 alunos. Assista o vídeo até o <b>FINAL</b>  e veja como começar!</h2>
-          <iframe className='video' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameborder="1" allowfullscreen></iframe>
+          <iframe lassName='video' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameborder="1" allowfullscreen></iframe>
           <a href='#garantirVaga' >
             <button className='buttonSub'>Sim! Quero fazer minha inscrição!</button>
           </a>
@@ -148,7 +149,7 @@ function App() {
           <h3>12x R$ 19,66</h3>
           <div className='button10'>
 
-            <button onClick={() => { setClose(false),bq('track', 'Lead')}} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
+            <button onClick={() => { setClose(false), fbq('track', 'AddToCart') }} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
 
           </div>
           <h3>Ou R$ 197 à vista</h3>
@@ -182,7 +183,7 @@ function App() {
       <section className='card-15'>
         <h3 className='title15'>Inscreva-se agora no Curso Lettering na Prática</h3>
         <h3 className='text15'>Em até 12x 19,66</h3>
-        <button onClick={() =>{ setClose(false),bq('track', 'Lead')}} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
+        <button onClick={() => { setClose(false), fbq('track', 'AddToCart') }} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
       </section>
       <section className='card-16'>
         <img className='img16' alt='selo garandia de 7 dias' src='../src/img/IMG-LNP_VENDAS01_GARANTIA-V02.jpg.webp' />
@@ -199,13 +200,16 @@ function App() {
         <div>
           {perguntas.map(p => <div key={p.id}>
             <div className='flex-17' >
-              <div className={!isHiddenPergunta(p.id) ? `icon17` : 'icon172'}>          {!isHiddenPergunta(p.id) ? <BsPlusLg /> : <BsDashLg />}            </div>
+              <div className={!isHiddenPergunta(p.id) ? `icon17` : 'icon172'}> {!isHiddenPergunta(p.id) ? <BsPlusLg /> : <BsDashLg />}            </div>
               <button className='button17' onClick={() => card17ControleDetalhePergunta(p.id)}> <p className={!isHiddenPergunta(p.id) ? `text17` : 'text172'}>{p.button}</p></button>
             </div>
             <p className={!isHiddenPergunta(p.id) ? `hidden` : ''}>{p.text}</p>
           </div>)}
         </div>
       </section>
+      <a onClick={()=> fbq('track', 'Contact')} className='linkwwapp' href="https://api.whatsapp.com/send?phone=5532988468403&text=Eu%20quero%20fazer%20uma%20compra.%20Pode%20me%20ajudar?" target="_blank" >
+        <img alt='wwapp' className='imgwwapp' src="https://camilapegado.com.br/wp-content/uploads/2022/02/whatsapp-icone-2-1020x1024-1.png" />
+      </a>
       <footer><p className='footer'>Camila Pegado | Lettering na Prática  © Todos os Direitos Reservados</p></footer>
     </div>
   </>
