@@ -7,8 +7,8 @@ import { UpdateDialog } from "../src/component/updateDialog";
 
 
 function App() {
-  const [imgA, setImgA] = useState([...imgAlunos])
-  const [imgB, setImgB] = useState([...imgCamila])
+  const [imgA,] = useState([...imgAlunos])
+  const [imgB,] = useState([...imgCamila])
   const [detalhesModulo, setDetalhesModulo] = useState([])
   const [detalhesPergunta, setDetalhesPergunta] = useState(0)
   const [close, setClose] = useState(true)
@@ -29,15 +29,36 @@ function App() {
 
   const isHiddenPergunta = (id) => detalhesPergunta === id
 
+  ! function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '896121291775054');
+
   return (<>
-      {close || <UpdateDialog setClose={setClose} />}
-    <div className={close? "direction":"opacity"}>
+    {close || <UpdateDialog setClose={setClose} />}
+    <div className={close ? "direction" : "opacity"}>
       <section className="card-1 ">
         <div className="felx-col-1">
           <h1><span className='yellow'>Curso de Lettering:</span>  Aprenda a fazer artes lindas<span className='yellow'> em até 30 dias</span>  mesmo que você seja iniciante.</h1>
           <h2 className='padding-y'>Junte-se a mais de 1.500 alunos. Assista o vídeo até o <b>FINAL</b>  e veja como começar!</h2>
           <iframe className='video' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameborder="1" allowfullscreen></iframe>
-          <button onClick={()=> setClose(false)} className='buttonSub'>Sim! Quero fazer minha inscrição!</button>
+          <a href='#garantirVaga' >
+            <button className='buttonSub'>Sim! Quero fazer minha inscrição!</button>
+          </a>
         </div>
       </section>
       <section className='card-2'>
@@ -71,7 +92,9 @@ function App() {
       </section>
       <div className='card-6'>
         <h3 className='card6-h3'>Inscreva-se agora no Curso Lettering na Prática e desperte a artista dentro de você.</h3>
-        <button className='buttonSub'>Eu quero aprender Lettering!</button>
+        <a href='#garantirVaga' >
+          <button className='buttonSub'>Eu quero aprender Lettering!</button>
+        </a>
       </div>
       <section className='card-7'>
         <img className='img7' alt='notebook' src="../src/img/IMG-LNP_VENDAS01_comunidade-V01-1-1024x678.jpg" />
@@ -115,7 +138,7 @@ function App() {
         </div>
         <h3>Somando são mais de R$100 reais em bônus.</h3>
       </section>
-      <section className='card-10'>
+      <section className='card-10' id='garantirVaga'>
         <div className='box10'>
           <p><b className='title10'>GARANTA SUA VAGA</b><span><br /></span></p>
           <p><b className='subtitle10'>COMECE AGORA E RECEBA</b><span><br /></span></p>
@@ -124,7 +147,9 @@ function App() {
           <h3>por até</h3>
           <h3>12x R$ 19,66</h3>
           <div className='button10'>
-          <button className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
+
+            <button onClick={() => { setClose(false),bq('track', 'Lead')}} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
+
           </div>
           <h3>Ou R$ 197 à vista</h3>
           <h3>ESSA OFERTE LIMITADA POR VAGAS</h3>
@@ -157,7 +182,7 @@ function App() {
       <section className='card-15'>
         <h3 className='title15'>Inscreva-se agora no Curso Lettering na Prática</h3>
         <h3 className='text15'>Em até 12x 19,66</h3>
-        <button className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
+        <button onClick={() =>{ setClose(false),bq('track', 'Lead')}} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
       </section>
       <section className='card-16'>
         <img className='img16' alt='selo garandia de 7 dias' src='../src/img/IMG-LNP_VENDAS01_GARANTIA-V02.jpg.webp' />
@@ -183,7 +208,7 @@ function App() {
       </section>
       <footer><p className='footer'>Camila Pegado | Lettering na Prática  © Todos os Direitos Reservados</p></footer>
     </div>
-    </>
+  </>
   )
 }
 
