@@ -13,7 +13,12 @@ function App() {
   const [detalhesPergunta, setDetalhesPergunta] = useState(0)
   const [close, setClose] = useState(true)
 
-  const breakPoints = [{ wideth: 1, itemToShow: 1 }]
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 850, itemsToShow: 3 },
+    { width: 1150, itemsToShow: 4 }
+  ]
 
   const card8ControleDetalheModulo = (id) => {
     if (detalhesModulo.includes(id)) { setDetalhesModulo([...detalhesModulo.filter(i => i !== id)]) }
@@ -53,19 +58,19 @@ function App() {
     <div className={close ? "direction" : "opacity"}>
 
       <section className="card-1 ">
-        <div className="felx-col-1">
+        <div className="flex1">
           <h1><span className='yellow'>Curso de Lettering:</span>  Aprenda a fazer artes lindas<span className='yellow'> em até 30 dias</span>  mesmo que você seja iniciante.</h1>
           <h2 className='padding-y'>Junte-se a mais de 1.500 alunos. Assista o vídeo até o <b>FINAL</b>  e veja como começar!</h2>
-          <iframe lassName='video' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameborder="1" allowfullscreen></iframe>
-          <a href='#garantirVaga' >
-            <button className='buttonSub'>Sim! Quero fazer minha inscrição!</button>
+          <iframe className='video' id='v1' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameborder="1" allowfullscreen></iframe>
+          <a className='b1' href='#garantirVaga' >
+            <button className='buttonSub '>Sim! Quero fazer minha inscrição!</button>
           </a>
         </div>
       </section>
       <section className='card-2'>
-        <div className="felx-col-2">
-          <h3 className='card2-h3'>Como funciona o curso</h3>
-          <p >Esse é um treinamento passo a passo, onde você aprende lettering 100% online. São mais de 90 aulas gravadas para você assistir no seu tempo, de onde quiser. Após a inscrição o acesso a plataforma chegará no seu e-mail.</p>
+        <div className="flex2">
+          <h3 className='card2-h3 align-left' >Como funciona o curso</h3>
+          <p className='align-left' >Esse é um treinamento passo a passo, onde você aprende lettering 100% online. São mais de 90 aulas gravadas para você assistir no seu tempo, de onde quiser. Após a inscrição o acesso a plataforma chegará no seu e-mail.</p>
         </div>
       </section>
       <section className='card-3'>
@@ -92,15 +97,17 @@ function App() {
 
       </section>
       <div className='card-6'>
-        <h3 className='card6-h3'>Inscreva-se agora no Curso Lettering na Prática e desperte a artista dentro de você.</h3>
+        <h3 className='card6-h3 align-left'>Inscreva-se agora no Curso Lettering na Prática e desperte a artista dentro de você.</h3>
         <a href='#garantirVaga' >
           <button className='buttonSub'>Eu quero aprender Lettering!</button>
         </a>
       </div>
       <section className='card-7'>
         <img className='img7' alt='notebook' src="../src/img/IMG-LNP_VENDAS01_comunidade-V01-1-1024x678.jpg" />
-        <h3>Junte-se a Comunidade de Lettering que mais cresce no Brasil.</h3>
-        <p>Receba no grupo vip de alunos desafios mensais de lettering, e um encontro ao vivo todo mês com a professora para te incentivar a evoluir cada vez mais no desenho das letras.</p>
+        <div>
+          <h3 className='align-left'>Junte-se a Comunidade de Lettering que mais cresce no Brasil.</h3>
+          <p className='align-left'>Receba no grupo vip de alunos desafios mensais de lettering, e um encontro ao vivo todo mês com a professora para te incentivar a evoluir cada vez mais no desenho das letras.</p>
+        </div>
       </section>
       <section className='card-8'>
         <h3>Conteúdo do Curso</h3>
@@ -115,12 +122,12 @@ function App() {
       </section>
       <section className='card-9'>
         <h3>Inscreva-se hoje e ganhe mais 2 Bônus Exclusivos</h3>
-        <div >
+        <div className='box9'>
           <div className='flex9'>
             <img className='img9' alt='bonus01' src='../src/img/IMG-LNP_VENDAS01_BONUS-V01-01.jpg.webp' />
             <div>
               <img className='icon9' alt='presente' src='../src/icon/BONUS-ICON.svg' />
-              <p>
+              <p className='align-left'>
                 <span className='title9'>Bônus 1: Valorizando a sua Arte</span><br />
                 <span>Como tirar fotos bonitas do seu lettering para postar nas redes sociais.</span>
               </p>
@@ -130,9 +137,9 @@ function App() {
             <img className='img9' alt='bonus01' src='../src/img/IMG-LNP_VENDAS01_BONUS-V01-02.jpg.webp' />
             <div>
               <img className='icon9' alt='presente' src='../src/icon/BONUS-ICON.svg' />
-              <p>
-                <span className='title9'>Bônus 2: Decoração Plus</span><br />
-                <span className='text9'>Aprenda a fazer elementos decorativos para destacar as frases do seu lettering.</span>
+              <p className='align-left'>
+                <span className='title9 '>Bônus 2: Decoração Plus</span><br />
+                <span >Aprenda a fazer elementos decorativos para destacar as frases do seu lettering.</span>
               </p>
             </div>
           </div>
@@ -148,9 +155,7 @@ function App() {
           <h3>por até</h3>
           <h3>12x R$ 19,66</h3>
           <div className='button10'>
-
             <button onClick={() => { setClose(false), fbq('track', 'AddToCart') }} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
-
           </div>
           <h3>Ou R$ 197 à vista</h3>
           <h3>ESSA OFERTE LIMITADA POR VAGAS</h3>
@@ -177,18 +182,20 @@ function App() {
       <section className='card-13'>
         <div className='flex13'>
           <h3>Sua Professora</h3>
-          <div> {professora.map((p, i) => <p className='professora' key={i}> {p}</p>)}</div>
+          <div> {professora.map((p, i) => <p className='professora align-left' key={i}> {p}</p>)}</div>
         </div>
       </section>
       <section className='card-15'>
         <h3 className='title15'>Inscreva-se agora no Curso Lettering na Prática</h3>
         <h3 className='text15'>Em até 12x 19,66</h3>
-        <button onClick={() => { setClose(false), fbq('track', 'AddToCart') }} className='buttonSub'>SIM! EU QUERO COMEÇAR AGORA</button>
+        <div className='flex15'>
+          <button onClick={() => { setClose(false), fbq('track', 'AddToCart') }} className='buttonSub '>SIM! EU QUERO COMEÇAR AGORA</button>
+        </div>
       </section>
       <section className='card-16'>
         <img className='img16' alt='selo garandia de 7 dias' src='../src/img/IMG-LNP_VENDAS01_GARANTIA-V02.jpg.webp' />
         <div>
-          <h3> Garantia de 7 dias</h3>
+          <h3 className='title16'> Garantia de 7 dias</h3>
           <p className='text16'>
             <span>Estamos comprometidos com a satisfação dos nossos alunos, esse é o Curso de Lettering mais completo do mercado. </span>
             <span>Por isso, seu risco é zero, teste o curso por 7 dias e tire suas próprias conclusões, se você não gostar basta mandar um simples e-mail e devolvemos 100% do seu dinheiro.</span>
@@ -196,19 +203,21 @@ function App() {
         </div>
       </section>
       <section className='card-17'>
-        <h3>Dúvidas Frequentes</h3>
-        <div>
-          {perguntas.map(p => <div key={p.id}>
-            <div className='flex-17' >
-              <div className={!isHiddenPergunta(p.id) ? `icon17` : 'icon172'}> {!isHiddenPergunta(p.id) ? <BsPlusLg /> : <BsDashLg />}            </div>
-              <button className='button17' onClick={() => card17ControleDetalhePergunta(p.id)}> <p className={!isHiddenPergunta(p.id) ? `text17` : 'text172'}>{p.button}</p></button>
-            </div>
-            <p className={!isHiddenPergunta(p.id) ? `hidden` : ''}>{p.text}</p>
-          </div>)}
+        <div className='box17'>
+          <h3 className='title17'> Dúvidas Frequentes <br /> </h3>
+          <div >
+            {perguntas.map(p => <div key={p.id}>
+              <div className='flex-17' >
+                <div className={!isHiddenPergunta(p.id) ? `icon17` : 'icon172'}> {!isHiddenPergunta(p.id) ? <BsPlusLg /> : <BsDashLg />}            </div>
+                <button className='button17' onClick={() => card17ControleDetalhePergunta(p.id)}> <p className={!isHiddenPergunta(p.id) ? `text17` : 'text172'}>{p.button}</p></button>
+              </div>
+              <p className={!isHiddenPergunta(p.id) ? `hidden` : ''}>{p.text}</p>
+            </div>)}
+          </div>
         </div>
       </section>
-      <a onClick={()=> fbq('track', 'Contact')} className='linkwwapp' href="https://api.whatsapp.com/send?phone=5532988468403&text=Eu%20quero%20fazer%20uma%20compra.%20Pode%20me%20ajudar?" target="_blank" >
-        <img alt='wwapp' className='imgwwapp' src="https://camilapegado.com.br/wp-content/uploads/2022/02/whatsapp-icone-2-1020x1024-1.png" />
+      <a onClick={() => fbq('track', 'Contact')} className='linkwwapp' href="https://api.whatsapp.com/send?phone=5532988468403&text=Eu%20quero%20fazer%20uma%20compra.%20Pode%20me%20ajudar?" target="_blank" >
+        <img alt='WhatsApp' className='imgwwapp' src="https://camilapegado.com.br/wp-content/uploads/2022/02/whatsapp-icone-2-1020x1024-1.png" />
       </a>
       <footer><p className='footer'>Camila Pegado | Lettering na Prática  © Todos os Direitos Reservados</p></footer>
     </div>

@@ -53,6 +53,10 @@
     margin: 0 10px 10px 10px;
 }
 
+.hidden {
+    display: none;
+}
+
 .card-1 {
     background-image: url("../img/mobile/MOBILE_BG-LNP_VENDAS01_HERO-V00.1.jpg.webp");
     background-repeat: no-repeat;
@@ -63,7 +67,7 @@
     align-items: center;
 }
 
-.felx-col-1 {
+.flex1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +76,7 @@
 }
 
 .card-2 {
-    background-image: url("../img//mobile/MOBILE_BG-LNP_VENDAS01_CURSO_V00.1.jpg.webp");
+    background-image: url("../img/mobile/MOBILE_BG-LNP_VENDAS01_CURSO_V00.1.jpg.webp");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +85,7 @@
     align-items: center;
 }
 
-.felx-col-2 {
+.flex2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +102,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20% 0 20% 0;
+    background-color: rgb(250, 250, 250);
 }
 
 .grid-3 {
@@ -145,6 +150,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10% 5% 10% 5%;
+    background-color: rgb(250, 250, 250);
 }
 
 .card5-h3 {
@@ -214,10 +220,6 @@
     padding: 5px 20px;
 }
 
-.hidden {
-    display: none;
-}
-
 .card-9 {
     display: flex;
     flex-direction: column;
@@ -240,10 +242,6 @@
 .title9 {
     font-weight: 600;
     line-height: 1.4em;
-}
-
-.text9 {
-    font-size: 14px;
 }
 
 .flex9 {
@@ -309,6 +307,7 @@
 }
 
 .card-11 {
+    background-color: rgb(250, 250, 250);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -322,6 +321,7 @@
 }
 
 .card-12 {
+    background-color: rgb(250, 250, 250);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,7 +395,7 @@
 .flex-17 {
     display: flex;
     align-items: center;
-    padding: 2%;
+    padding: 10px;
 }
 
 .button17 {
@@ -525,19 +525,171 @@
     padding: 0px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 935px) {
+    .align-left {
+        text-align: left;
+    }
+    .box450 {
+        width: 800px;
+        padding-top: 5%;
+    }
+    .buttonSub {
+        background-color: var( --cor-amarelo-padrao);
+        margin: 1%;
+        border-radius: 5px;
+        border: none;
+        padding: 10%;
+        font-weight: 500;
+        font-family: 'sora';
+        font-size: 18px;
+        width: 500px;
+        height: auto;
+        cursor: pointer;
+    }
     .card-1 {
         background-image: url("../img/BG-HERO-VENDAS01-LNP-V003-1.jpg.webp");
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 100vh;
-        width: 100vw;
+        align-items: flex-start;
+        padding-bottom: 10%;
     }
-    .felx-col {
+    .flex1 {
+        width: 40%;
+        padding: 7% 0 0 7%;
+    }
+    #v1 {
+        width: 500px;
+        height: 300px;
+        margin: 0%;
+    }
+    .b1 {
         display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding: 10%;
+        text-decoration: none
+    }
+    .card-2 {
+        background-image: url("../img/BG-CURSO-VENDAS01-LNP-V003-1.jpg.webp");
+        align-items: flex-end;
+    }
+    .flex2 {
+        align-items: flex-start;
+        width: 40%;
+        padding: 10% 7% 10% 0;
+    }
+    .card2-h3 {
+        margin-top: 0%;
+    }
+    .card-3 {
+        padding: 10% 0 10% 0;
+    }
+    .card-4 {
+        background-image: url("../img/BG-LNP_VENDAS01_S03-V005.jpg.webp");
+        padding: 30% 5% 2% 5%;
+    }
+    .card-5 {
+        padding: 0% 5% 10% 5%;
+    }
+    .card5-h3 {
+        margin-top: 10%;
+    }
+    .card-6 {
+        flex-direction: row;
+        padding: 6%;
+    }
+    .card6-h3 {
+        text-align: left;
+    }
+    .card-7 {
+        flex-direction: row;
+        padding: 5% 4% 0% 2%;
+    }
+    .img7 {
+        width: 560px;
+        height: 330px;
+        margin: 3%;
+    }
+    .card-8 {
+        padding: 0 5% 10% 5%;
+        margin-top: 5%;
+    }
+    .flex8 {
+        padding: 7% 4% 0% 4%;
+    }
+    .map8 {
+        margin: 6px;
+    }
+    .card-9 {
+        padding: 0 10% 10% 10%;
+    }
+    .box9 {
+        display: flex;
+    }
+    .img9 {
+        height: 360px;
+        margin: 5%;
+    }
+    .icon9 {
+        height: 50px;
+        width: 50px;
+        margin: 30px 0 10px 0;
+    }
+    .card-10 {
+        padding: 5% 5% 7% 5%;
+    }
+    .box10 {
+        padding: 4% 3% 5% 3%;
+    }
+    .img10 {
+        margin: 5% 0% 0% 5%;
+        width: 80%;
+    }
+    .video11 {
+        width: 95%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-12 {
+        padding: 0% 1% 7% 1%;
+    }
+    .card-13 {
+        background-image: url("../img/BG-LNP_VENDAS01_BIO-V09.jpg.webp");
+        padding: 15% 2% 10% 2%;
+    }
+    .flex13 {
+        padding: 5% 1% 5% 1%;
+        width: 30%;
+    }
+    .card-15 {
+        padding: 3% 1% 0% 1%;
+    }
+    .flex15 {
+        margin: 1%;
+    }
+    .card-16 {
+        flex-direction: row;
+    }
+    .text16 {
+        margin: 2%;
+        text-align: left;
+    }
+    .title16 {
+        margin-left: 2%;
+        text-align: left;
+    }
+    .card-17 {
+        padding: 5%;
+        height: 380px;
+    }
+    .box17 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .title17 {
+        margin-right: 3%;
+        min-width: 300px;
+    }
+    .footer {
+        font-weight: 400;
+        font-size: 20px;
     }
 }
