@@ -692,4 +692,7 @@
         font-weight: 400;
         font-size: 20px;
     }
+    .dialogStyles {
+        width: 40%;
+    }
 }

@@ -2,11 +2,13 @@ import '../css/helper.css';
 import { useState } from 'react';
 import { BiArrowBack } from 'react-icons/Bi';
 
+
 function UpdateDialog({ setClose }) {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [numero, setNumero] = useState('');
+
 
     ! function (f, b, e, v, n, t, s) {
         if (f.fbq) return;

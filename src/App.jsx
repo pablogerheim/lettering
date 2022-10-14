@@ -4,7 +4,8 @@ import './css/helper.css'
 import { BsCheckLg, BsPlusLg, BsDashLg } from 'react-icons/Bs';
 import Carousel from 'react-elastic-carousel';
 import { UpdateDialog } from "../src/component/updateDialog";
-
+//import { useSearchParams,useLocation } from "react-router-dom";
+import { v4 } from 'uuid'
 
 function App() {
   const [imgA,] = useState([...imgAlunos])
@@ -12,6 +13,8 @@ function App() {
   const [detalhesModulo, setDetalhesModulo] = useState([])
   const [detalhesPergunta, setDetalhesPergunta] = useState(0)
   const [close, setClose] = useState(true)
+  //const [searchParams, setSearchParams] = useSearchParams()
+  // searchParams.get("utm_source");
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -76,7 +79,7 @@ function App() {
       <section className='card-3'>
         <h3 className='card3-h3'>O Curso de Lettering é para você que:</h3>
         <div className='grid-3'>
-          {paraVoce.map((p, i) => <div key={i} className='box150'><img className='box70' src={`../src/icon/${p.icon}`} alt="imagem" /> <p className='left'>{p.text}</p></div>)}
+          {paraVoce.map(p => <div key={v4()} className='box150'><img className='box70' src={`../src/icon/${p.icon}`} alt="imagem" /> <p className='left'>{p.text}</p></div>)}
         </div>
       </section>
       <section className='card-4'>
@@ -91,7 +94,7 @@ function App() {
         <p>A maioria desses alunos nunca tinha desenhado antes. </p>
         <div className='box450'>
           <Carousel breakPoints={breakPoints}>
-            {imgA.map((item, i) => <div key={i}><img className='imgAluno' alt='imagem aluno' src={`../src/img/alunos/${item}`} /></div>)}
+            {imgA.map(item => <div key={v4()}><img className='imgAluno' alt='imagem aluno' src={`../src/img/alunos/${item}`} /></div>)}
           </Carousel>
         </div>
 
@@ -113,7 +116,7 @@ function App() {
         <h3>Conteúdo do Curso</h3>
         <p>Cada detalhe foi pensado para que mesmo sendo iniciante você consiga fazer artes lindas e profissionais.</p>
         <div className='flex8'>
-          {conteudo.map(c => <div className='map8' key={c.id}>
+          {conteudo.map(c => <div className='map8' key={v4()}>
             <img className='img8' src={`../src/img/venda/${c.img}`} alt="imagen do modulo" />
             <button className='button8' onClick={() => card8ControleDetalheModulo(c.id)}>Ver Detalhes</button>
             <p className={!isHiddenModulo(c.id) ? `hidden` : ''}>{c.text}</p>
@@ -150,7 +153,7 @@ function App() {
         <div className='box10'>
           <p><b className='title10'>GARANTA SUA VAGA</b><span><br /></span></p>
           <p><b className='subtitle10'>COMECE AGORA E RECEBA</b><span><br /></span></p>
-          <div className='garantias10'> {receba.map((r, i) => <div className='flex10'> <div className='icon10'><BsCheckLg /></div>  <p className='text10' key={i}> {r} </p> </div>)}</div>
+          <div className='garantias10'> {receba.map(r => <div className='flex10'> <div className='icon10'><BsCheckLg /></div>  <p className='text10' key={v4()}> {r} </p> </div>)}</div>
           <h3> De: <s className='line'> R$ 697</s></h3>
           <h3>por até</h3>
           <h3>12x R$ 19,66</h3>
@@ -175,14 +178,14 @@ function App() {
         <h3>Faça artes como essas</h3>
         <div className='box450'>
           <Carousel breakPoints={breakPoints}>
-            {imgB.map((item, i) => <div key={i}><img className='imgAluno' alt='imagem aluno' src={`../src/img/camila/${item}`} /></div>)}
+            {imgB.map(item => <div key={v4()}><img className='imgAluno' alt='imagem aluno' src={`../src/img/camila/${item}`} /></div>)}
           </Carousel>
         </div>
       </section>
       <section className='card-13'>
         <div className='flex13'>
           <h3>Sua Professora</h3>
-          <div> {professora.map((p, i) => <p className='professora align-left' key={i}> {p}</p>)}</div>
+          <div> {professora.map(p => <p className='professora align-left' key={v4()}> {p}</p>)}</div>
         </div>
       </section>
       <section className='card-15'>
@@ -206,7 +209,7 @@ function App() {
         <div className='box17'>
           <h3 className='title17'> Dúvidas Frequentes <br /> </h3>
           <div >
-            {perguntas.map(p => <div key={p.id}>
+            {perguntas.map(p => <div key={v4()}>
               <div className='flex-17' >
                 <div className={!isHiddenPergunta(p.id) ? `icon17` : 'icon172'}> {!isHiddenPergunta(p.id) ? <BsPlusLg /> : <BsDashLg />}            </div>
                 <button className='button17' onClick={() => card17ControleDetalhePergunta(p.id)}> <p className={!isHiddenPergunta(p.id) ? `text17` : 'text172'}>{p.button}</p></button>
