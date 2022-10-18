@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { paraVoce, imgAlunos, conteudo, receba, imgCamila, professora, perguntas } from './data/mock.js'
 import './css/helper.css'
-import { BsCheckLg, BsPlusLg, BsDashLg } from 'react-icons/Bs';
+//import { BsCheckLg, BsPlusLg, BsDashLg } from 'react-icons/Bs';
 import Carousel from 'react-elastic-carousel';
 import { UpdateDialog } from "../src/component/updateDialog";
 //import { useSearchParams,useLocation } from "react-router-dom";
@@ -153,7 +153,9 @@ function App() {
         <div className='box10'>
           <p><b className='title10'>GARANTA SUA VAGA</b><span><br /></span></p>
           <p><b className='subtitle10'>COMECE AGORA E RECEBA</b><span><br /></span></p>
-          <div className='garantias10'> {receba.map(r => <div key={v4()} className='flex10'> <div className='icon10'><BsCheckLg /></div>  <p className='text10'> {r} </p> </div>)}</div>
+          <div className='garantias10'> {receba.map(r => <div key={v4()} className='flex10'> <div className='icon10'>
+            •
+          </div>  <p className='text10'> {r} </p> </div>)}</div>
           <h3> De: <s className='line'> R$ 697</s></h3>
           <h3>por até</h3>
           <h3>12x R$ 19,66</h3>
@@ -211,7 +213,7 @@ function App() {
           <div >
             {perguntas.map(p => <div key={v4()}>
               <div className='flex-17' >
-                <div className={!isHiddenPergunta(p.id) ? `icon17` : 'icon172'}> {!isHiddenPergunta(p.id) ? <BsPlusLg /> : <BsDashLg />}            </div>
+                <div className={!isHiddenPergunta(p.id) ? `icon17` : 'icon172'}> {!isHiddenPergunta(p.id) ? <p>+</p> : <p>-</p>}            </div>
                 <button className='button17' onClick={() => card17ControleDetalhePergunta(p.id)}> <p className={!isHiddenPergunta(p.id) ? `text17` : 'text172'}>{p.button}</p></button>
               </div>
               <p className={!isHiddenPergunta(p.id) ? `hidden` : ''}>{p.text}</p>
