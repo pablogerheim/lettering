@@ -64,7 +64,7 @@ function App() {
         <div className="flex1">
           <h1><span className='yellow'>Curso de Lettering:</span>  Aprenda a fazer artes lindas<span className='yellow'> em até 30 dias</span>  mesmo que você seja iniciante.</h1>
           <h2 className='padding-y'>Junte-se a mais de 1.500 alunos. Assista o vídeo até o <b>FINAL</b>  e veja como começar!</h2>
-          <iframe className='video' id='v1' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameBorder="1" allowfullscreen></iframe>
+          <iframe className='video' id='v1' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameBorder="1" allowFullScreen></iframe>
           <a className='b1' href='#garantirVaga' >
             <button className='buttonSub '>Sim! Quero fazer minha inscrição!</button>
           </a>
@@ -169,9 +169,9 @@ function App() {
       <section className='card-11'>
         <h3>Depoimento dos Alunos</h3>
         <div className='video11'>
-          <iframe className='video' src="https://www.youtube.com/embed/lGr-Ko8iAog" title="Depoimento Israel" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe className='video' src="https://www.youtube.com/embed/O85qAhIuHHk" title="Depoimento Julia Kinoshita" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe className='video' src="https://www.youtube.com/embed/j5k1JXgDEcI" title="Depoimento Vanusa" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className='video' src="https://www.youtube.com/embed/lGr-Ko8iAog" title="Depoimento Israel" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe className='video' src="https://www.youtube.com/embed/O85qAhIuHHk" title="Depoimento Julia Kinoshita" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe className='video' src="https://www.youtube.com/embed/j5k1JXgDEcI" title="Depoimento Vanusa" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </section>
       <section className='card-12'>
