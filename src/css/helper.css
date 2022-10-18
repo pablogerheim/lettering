@@ -295,8 +295,9 @@
     width: 16px;
     height: 16px;
     display: flex;
-    align-self: center;
-    margin: 0 3% 0 0;
+    align-self: top;
+    margin: 0 2% 0 0;
+    font-size: 35px;
 }
 
 .text10 {
