@@ -1,9 +1,12 @@
 import '../css/helper.css';
 import { useState } from 'react';
-import { BiArrowBack } from 'react-icons/Bi';
+//import { BiArrowBack } from 'react-icons/Bi';
 
 
-function UpdateDialog({ setClose }) {
+function UpdateDialog({ 
+    setClose,
+    utm_source
+ }) {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -30,9 +33,8 @@ function UpdateDialog({ setClose }) {
     fbq('init', '896121291775054');
 
     const handleSubmit = async () => {
-
         fbq('track', 'Lead');
-        window.location.href = `https://go.hotmart.com/C70041567X?ap=30cc&email=${email}&name=${name}&phonenumber=${numero}`;  //&${'current_path'}
+        window.location.href = `https://go.hotmart.com/C70041567X?ap=30cc&email=${email}&name=${name}&phonenumber=${numero}&${utm_source}`; 
     }
 
     return (
@@ -42,7 +44,7 @@ function UpdateDialog({ setClose }) {
                     onClick={() => setClose(true)}
                     className='dialogCloseButtonStyles'
                 >
-                    <BiArrowBack />
+                    X
                 </button>
                 <h3 className='dialogTitle'>CRIE SEU ACESSO AGORA </h3>
                 <p className='dialogText'>Digite os dados que você usará para acessar o Curso Lettering na Prática.</p>

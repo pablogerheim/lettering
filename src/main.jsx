@@ -9,8 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/home' element={<App />} />
-        <Route path="/*" element={<Navigate to="/home" />} />
+        <Route path='/' element={<App />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
