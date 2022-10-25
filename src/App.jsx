@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { paraVoce, imgAlunos, conteudo, receba, imgCamila, professora, perguntas } from './data/mock.js'
 import './css/helper.css'
-//import { BsCheckLg, BsPlusLg, BsDashLg } from 'react-icons/Bs';
 import Carousel from 'react-elastic-carousel';
 import { UpdateDialog } from "../src/component/updateDialog";
 import { useSearchParams } from "react-router-dom";
@@ -14,9 +13,15 @@ function App() {
   const [detalhesPergunta, setDetalhesPergunta] = useState(0)
   const [close, setClose] = useState(true)
   const [searchParams] = useSearchParams()
-  //const test = searchParams.get("utm_source");
 
-  console.log("serach PArams", searchParams.get("utm_source"), searchParams.get("name"))
+  console.log("Serach Params",
+    searchParams.get("utm_source"),
+    searchParams.get("src"),
+    searchParams.get("utm_medium"),
+    searchParams.get("utm_campaign"),
+    searchParams.get("utm_content"),
+    searchParams.get("utm_id")
+  )
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -69,7 +74,14 @@ function App() {
         <div className="flex1">
           <h1><span className='yellow'>Curso de Lettering:</span> Aprenda a fazer artes lindas<span className='yellow'> em até 30 dias</span>  mesmo que você seja iniciante.</h1>
           <h2 className='padding-y'>Junte-se a mais de 1.500 alunos. Assista o vídeo até o <b>FINAL</b>  e veja como começar!</h2>
+          
           <iframe className='video' id='v1' src="https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe&autoplay=1#t=" title="Apresentação" frameBorder="1" allowfullscreen></iframe>
+          <p>utm_source:{searchParams.get("utm_source")}</p>
+          <p>src:{searchParams.get("src")}</p>
+          <p>utm_medium:{searchParams.get("utm_medium")}</p>
+          <p>utm_campaign:{searchParams.get("utm_campaign")}</p>
+          <p>utm_content:{searchParams.get("utm_content")}</p>
+          <p>utm_id:{searchParams.get("utm_id")}</p>
           <a className='b1' href='#garantirVaga' >
             <button className='buttonSub '>Sim! Quero fazer minha inscrição!</button>
           </a>

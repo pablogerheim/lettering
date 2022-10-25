@@ -1,7 +1,5 @@
 import '../css/helper.css';
 import { useState } from 'react';
-//import { BiArrowBack } from 'react-icons/Bi';
-
 
 function UpdateDialog({ 
     setClose,
