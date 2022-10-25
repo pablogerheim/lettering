@@ -221,7 +221,7 @@ function App() {
           <div >
             {perguntas.map(p => <div key={v4()}>
               <div className='flex-17' >
-                <button className='button17' onClick={() => card17ControleDetalhePergunta(p.id)}> <p className={!isHiddenPergunta(p.id) ? `text17` : 'text172'}>{p.button}</p></button>
+                <button className='button17' onClick={() => card17ControleDetalhePergunta(p.id)}> <p className={!isHiddenPergunta(p.id) ? `text17` : 'text172'}>{!isHiddenPergunta(p.id) ? `+` : '-'} {p.button}</p></button>
               </div>
               <p className={!isHiddenPergunta(p.id) ? `hidden` : ''}>{p.text}</p>
             </div>)}
