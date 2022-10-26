@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(250, 250, 250);
 }
 
 #mc_embed_signup {
@@ -46,6 +47,12 @@
     height: 92px;
 }
 
+.buttonSub:hover {
+    background-color: var( --cor-azul-texto);
+    color: #FFF;
+    transition: 0.3s;
+}
+
 .line {
     text-decoration: line-through;
 }
@@ -62,6 +69,15 @@
 
 .hidden {
     display: none;
+    transition: 0.5;
+}
+
+.colorDarkBlue {
+    color: #006778;
+}
+
+.transition {
+    transition: 0.5;
 }
 
 .card-1 {
@@ -122,13 +138,46 @@
     padding: 0 15%;
 }
 
+.icon3 {
+    font-size: 60px;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+    fill: #006778;
+    stroke: #006778;
+    stroke-miterlimit: 10;
+}
+
+.icon3-1 {
+    font-size: 60px;
+    width: 0.7em;
+    height: 1em;
+    position: relative;
+    display: block;
+    fill: #006778;
+    stroke: #006778;
+    stroke-miterlimit: 10;
+}
+
 .box150 {
     background-image: linear-gradient(180deg, #0095AD1F 0%, #FAFAFA00 100%);
     height: 150px;
-    width: 130px;
+    width: 170px;
     margin: 5px;
     padding: 10px 10px;
     border-radius: 10px;
+}
+
+.box150:hover {
+    background-image: linear-gradient(180deg, #0095AD1F 0%, #FAFAFA00 100%);
+    height: 150px;
+    width: 170px;
+    margin: 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
 }
 
 .box70 {
@@ -232,6 +281,9 @@
     flex-direction: column;
     align-items: center;
     padding: 0 10% 20% 10%;
+    fill: var(--cor-azul-texto);
+    stroke: var(--cor-azul-texto);
+    stroke-miterlimit: 10;
 }
 
 .img9 {
@@ -382,6 +434,12 @@
     font-weight: 500;
 }
 
+.b15:hover {
+    background-color: #fff;
+    color: var(--cor-azul-texto);
+    transition: 0.3s;
+}
+
 .card-16 {
     display: flex;
     flex-direction: column;
@@ -409,7 +467,7 @@
 .button17 {
     color: var(--cor-azul-texto2);
     border: none;
-    background: #fff;
+    background-color: rgb(250, 250, 250);
     display: flex;
     text-align: left;
     align-items: flex-start;
@@ -418,6 +476,12 @@
 
 .text17 {
     text-align: left;
+}
+
+.p17 {
+    display: table-caption;
+    width: fit-content;
+    transition: 0.5;
 }
 
 .icon17 {
@@ -550,17 +614,20 @@
         font-weight: 500;
         font-family: 'sora';
         font-size: 18px;
-        width: 500px;
-        height: auto;
+        width: 510px;
+        height: 70px;
         cursor: pointer;
+        text-align: center;
+        padding: inherit;
     }
     .card-1 {
         background-image: url("../img/BG-HERO-VENDAS01-LNP-V003-1.jpg.webp");
         align-items: flex-start;
+        background-size: contain;
         padding-bottom: 10%;
     }
     .flex1 {
-        width: 40%;
+        width: 520px;
         padding: 7% 0 0 7%;
     }
     #v1 {
@@ -579,10 +646,13 @@
     .flex2 {
         align-items: flex-start;
         width: 40%;
-        padding: 10% 7% 10% 0;
+        padding: 7% 0% 10% 0;
     }
     .card2-h3 {
         margin-top: 0%;
+    }
+    .text2 {
+        width: 465px;
     }
     .card-3 {
         padding: 10% 0 10% 0;
@@ -590,12 +660,14 @@
     .card-4 {
         background-image: url("../img/BG-LNP_VENDAS01_S03-V005.jpg.webp");
         padding: 30% 5% 2% 5%;
+        background-size: contain;
     }
     .card-5 {
         padding: 0% 5% 10% 5%;
     }
     .card5-h3 {
         margin-top: 10%;
+        width: 650px;
     }
     .card-6 {
         flex-direction: row;
@@ -603,14 +675,32 @@
     }
     .card6-h3 {
         text-align: left;
+        width: 600px;
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+    .b6 {
+        width: 434px;
+        height: 74px;
+    }
+    .b6:hover {
+        background-color: #fff;
+        color: var(--cor-azul-texto);
+        transition: 0.3s;
     }
     .card-7 {
         flex-direction: row;
         padding: 5% 4% 0% 2%;
     }
+    .title7 {
+        width: 550px;
+    }
+    .text7 {
+        width: 550px;
+    }
     .img7 {
         width: 560px;
-        height: 330px;
+        height: 370px;
         margin: 3%;
     }
     .card-8 {
@@ -622,6 +712,16 @@
     }
     .map8 {
         margin: 6px;
+        flex-wrap: wrap;
+        width: 205px;
+    }
+    .img8 {
+        width: 205px;
+        height: 300px;
+    }
+    .button8 {
+        width: 205px;
+        height: 50px;
     }
     .card-9 {
         padding: 0 10% 10% 10%;
@@ -659,7 +759,8 @@
     }
     .card-13 {
         background-image: url("../img/BG-LNP_VENDAS01_BIO-V09.jpg.webp");
-        padding: 15% 2% 10% 2%;
+        padding: 10% 10% 10% 10%;
+        background-size: auto;
     }
     .flex13 {
         padding: 5% 1% 5% 1%;
@@ -673,23 +774,26 @@
     }
     .card-16 {
         flex-direction: row;
+        justify-content: center;
     }
     .text16 {
         margin: 2%;
         text-align: left;
+        max-width: 600px;
     }
     .title16 {
         margin-left: 2%;
         text-align: left;
     }
     .card-17 {
-        padding: 5%;
+        padding: 0;
         height: 380px;
     }
     .box17 {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        justify-content: center;
         width: 90%;
     }
     .title17 {
@@ -699,6 +803,7 @@
     .footer {
         font-weight: 400;
         font-size: 20px;
+        padding: 0;
     }
     .dialogStyles {
         width: 40%;
