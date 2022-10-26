@@ -1,45 +1,28 @@
 import '../css/helper.css';
 import { useState } from 'react';
+import { api } from "../data/api";
 
-function UpdateDialog({ 
-    setClose,
-    utm_source
- }) {
+function UpdateDialog({
+    setOpen,
+    current_path
+}) {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [numero, setNumero] = useState('');
 
-
-    ! function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '896121291775054');
-
     const handleSubmit = async () => {
-        fbq('track', 'Lead');
-        window.location.href = `https://go.hotmart.com/C70041567X?ap=30cc&email=${email}&name=${name}&phonenumber=${numero}&${utm_source}`; 
+        event.preventDefault()
+        dataLayer.push({event: 'leadCapture'})
+       await api(email, name, numero)
+        window.location.href = `https://go.hotmart.com/C70041567X?ap=30cc&email=${email}&name=${name}&phonenumber=${numero}&src=${current_path}`;
     }
 
     return (
         <div className="dialogStyles">
             <div className=" dialogHead">
                 <button
-                    onClick={() => setClose(true)}
+                    onClick={() => setOpen(false)}
                     className='dialogCloseButtonStyles'
                 >
                     X
@@ -47,10 +30,11 @@ function UpdateDialog({
                 <h3 className='dialogTitle'>CRIE SEU ACESSO AGORA </h3>
                 <p className='dialogText'>Digite os dados que você usará para acessar o Curso Lettering na Prática.</p>
             </div>
-            <div className='dialog'>
+            <form className='dialog'>
                 <label className="dialogLabel">
                     Digite seu Nome
                     <input
+                        required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
@@ -58,6 +42,7 @@ function UpdateDialog({
                 <label className="dialogLabel">
                     Digite seu e-mail
                     <input
+                        required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
@@ -65,18 +50,19 @@ function UpdateDialog({
                 <label className="dialogLabel">
                     Digite seu WhatsApp com DDD
                     <input
+                        required
                         value={numero}
                         onChange={(e) => setNumero(e.target.value)}
                     />
-
                 </label>
                 <button
+                    type='submit'
                     className='dialogButtonSub'
                     onClick={handleSubmit}
                 >
                     Continuar inscrição {'>>'}
                 </button>
-            </div>
+            </form>
         </div>
     );
 }
