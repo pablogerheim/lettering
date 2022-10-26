@@ -14,7 +14,7 @@ function UpdateDialog({
     const handleSubmit = async () => {
         event.preventDefault()
         dataLayer.push({event: 'leadCapture'})
-       await api(email, name, numero)
+        await api(email, name, numero)
         window.location.href = `https://go.hotmart.com/C70041567X?ap=30cc&email=${email}&name=${name}&phonenumber=${numero}&src=${current_path}`;
     }
 
