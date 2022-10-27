@@ -20,7 +20,7 @@
 }
 
 .yellow {
-    color: var(--cor-amarelo-padrao);
+    color: var(--secondary-color);
     text-shadow: 0px 1px rgb(152, 152, 80);
 }
 
@@ -35,7 +35,7 @@
 }
 
 .buttonSub {
-    background-color: var( --cor-amarelo-padrao);
+    background-color: var( --secondary-color);
     margin: 10% 0 10% 0%;
     border-radius: 5px;
     border: none;
@@ -48,7 +48,7 @@
 }
 
 .buttonSub:hover {
-    background-color: var( --cor-azul-texto);
+    background-color: var( --primary-color-alt);
     color: #FFF;
     transition: 0.3s;
 }
@@ -95,7 +95,8 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    padding: 55% 0 0 0;
+    padding-top: 55%;
+    max-width: 520px;
 }
 
 .card-2 {
@@ -106,6 +107,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.video-frame::-webkit-media-controls-play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
 }
 
 .flex2 {
@@ -220,7 +228,7 @@
 }
 
 .card-6 {
-    background-color: var(--cor-azul-texto);
+    background-color: var(--primary-color-alt);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,7 +280,7 @@
     border: none;
     color: white;
     font-size: 20px;
-    background-color: var(--cor-azul-texto);
+    background-color: var(--primary-color-alt);
     padding: 5px 20px;
 }
 
@@ -281,8 +289,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0 10% 20% 10%;
-    fill: var(--cor-azul-texto);
-    stroke: var(--cor-azul-texto);
+    fill: var(--primary-color-alt);
+    stroke: var(--primary-color-alt);
     stroke-miterlimit: 10;
 }
 
@@ -308,7 +316,7 @@
 }
 
 .card-10 {
-    background-color: var(--cor-azul-texto);
+    background-color: var(--primary-color-alt);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,13 +327,6 @@
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 7% 3% 7% 3%;
-}
-
-.button10 {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
 }
 
 .garantias10 {
@@ -350,7 +351,7 @@
 }
 
 .icon10 {
-    color: var(--cor-amarelo-padrao);
+    color: var(--secondary-color);
     width: 16px;
     height: 16px;
     display: flex;
@@ -360,7 +361,7 @@
 }
 
 .text10 {
-    color: var( --cor-azul-texto2);
+    color: var( --primary-color);
     font-weight: 500;
     margin: 5px 20px 5px 0;
     text-align: left;
@@ -418,7 +419,7 @@
 }
 
 .card-15 {
-    background-color: var(--cor-azul-texto);
+    background-color: var(--primary-color-alt);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -430,15 +431,11 @@
 }
 
 .text15 {
-    color: var(--cor-amarelo-padrao);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 
-.b15:hover {
-    background-color: #fff;
-    color: var(--cor-azul-texto);
-    transition: 0.3s;
-}
+
 
 .card-16 {
     display: flex;
@@ -465,7 +462,7 @@
 }
 
 .button17 {
-    color: var(--cor-azul-texto2);
+    color: var(--primary-color);
     border: none;
     background-color: rgb(250, 250, 250);
     display: flex;
@@ -485,18 +482,18 @@
 }
 
 .icon17 {
-    color: var(--cor-azul-texto2);
+    color: var(--primary-color);
     width: 14px;
     height: 14px;
 }
 
 .text172 {
     text-align: left;
-    color: var(--cor-amarelo-padrao);
+    color: var(--secondary-color);
 }
 
 .icon172 {
-    color: var(--cor-amarelo-padrao);
+    color: var(--secondary-color);
     width: 14px;
     height: 14px;
 }
@@ -523,7 +520,7 @@
 }
 
 .dialogCloseButtonStyles {
-    background-color: var(--cor-azul-texto);
+    background-color: var(--primary-color-alt);
     padding: 3px 8px;
     cursor: pointer;
     border-radius: 50%;
@@ -552,7 +549,7 @@
 }
 
 .dialogHead {
-    background-color: var(--cor-azul-texto);
+    background-color: var(--primary-color-alt);
 }
 
 .dialogTitle {
@@ -565,7 +562,7 @@
 }
 
 .dialogButtonSub {
-    background-color: var( --cor-amarelo-padrao);
+    background-color: var( --secondary-color);
     margin: 5% 0% 0% 0%;
     border-radius: 5px;
     border: none;
@@ -596,6 +593,10 @@
     z-index: 100;
     padding: 0px;
 }
+.video-frame {
+    width: 100%;
+    height: 300px;
+}
 
 @media screen and (min-width: 935px) {
     .align-left {
@@ -605,21 +606,7 @@
         width: 800px;
         padding-top: 5%;
     }
-    .buttonSub {
-        background-color: var( --cor-amarelo-padrao);
-        margin: 1%;
-        border-radius: 5px;
-        border: none;
-        padding: 10%;
-        font-weight: 500;
-        font-family: 'sora';
-        font-size: 18px;
-        width: 510px;
-        height: 70px;
-        cursor: pointer;
-        text-align: center;
-        padding: inherit;
-    }
+
     .card-1 {
         background-image: url("../img/BG-HERO-VENDAS01-LNP-V003-1.jpg.webp");
         align-items: flex-start;
@@ -627,18 +614,9 @@
         padding-bottom: 10%;
     }
     .flex1 {
-        width: 520px;
-        padding: 7% 0 0 7%;
+        padding: 6% 0 0 12%;
     }
-    #v1 {
-        width: 500px;
-        height: 300px;
-        margin: 0%;
-    }
-    .b1 {
-        display: flex;
-        text-decoration: none
-    }
+
     .card-2 {
         background-image: url("../img/BG-CURSO-VENDAS01-LNP-V003-1.jpg.webp");
         align-items: flex-end;
@@ -652,7 +630,7 @@
         margin-top: 0%;
     }
     .text2 {
-        width: 465px;
+        /* width: 465px; */
     }
     .card-3 {
         padding: 10% 0 10% 0;
@@ -679,24 +657,16 @@
         margin: 0 20px;
         padding: 0 20px;
     }
-    .b6 {
-        width: 434px;
-        height: 74px;
-    }
-    .b6:hover {
-        background-color: #fff;
-        color: var(--cor-azul-texto);
-        transition: 0.3s;
-    }
+
     .card-7 {
         flex-direction: row;
         padding: 5% 4% 0% 2%;
     }
     .title7 {
-        width: 550px;
+        /* width: 550px; */
     }
     .text7 {
-        width: 550px;
+        /* width: 550px; */
     }
     .img7 {
         width: 560px;
@@ -769,9 +739,7 @@
     .card-15 {
         padding: 3% 1% 0% 1%;
     }
-    .flex15 {
-        margin: 1%;
-    }
+
     .card-16 {
         flex-direction: row;
         justify-content: center;

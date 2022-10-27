@@ -4,11 +4,10 @@
 */
 
 :root {
-    --cor-azul-texto2: #00b1c1;
-    --cor-azul-texto: #0095AD;
-    --cor-amarelo-padrao: #FFD21F;
-    --fonte-texto: 'sora';
-    --saise: 30px;
+    --primary-color: #00b1c1;
+    --primary-color-alt: #0095AD;
+    --primary-color-dark: #006778;
+    --secondary-color: #FFD21F;
 }
 
 html,
@@ -103,6 +102,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    font-family: "Sora", Sans-serif;
+}
+
 
 /* HTML5 display-role reset for older browsers */
 
@@ -151,8 +154,7 @@ h1 {
     line-height: 1.3em;
     font-weight: 500;
     font-size: 26px;
-    font-family: 'sora';
-    color: var(--cor-azul-texto);
+    color: var(--primary-color-dark);
     text-align: center;
 }
 
@@ -160,16 +162,14 @@ h2 {
     line-height: 1.2em;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'sora';
-    color: var(--cor-azul-texto);
+    color: var(--primary-color-alt);
     text-align: center;
 }
 
 h3 {
     font-weight: 800;
     font-size: 29px;
-    font-family: 'sora';
-    color: var( --cor-azul-texto);
+    color: var( --primary-color-alt);
     text-align: center;
     line-height: 1.3em;
     margin-bottom: 10px;
@@ -178,22 +178,16 @@ h3 {
 p {
     font-weight: 400;
     font-size: 18px;
-    font-family: 'sora';
     text-align: center;
     line-height: 1.2em;
 }
 
 b {
-    color: var( --cor-azul-texto);
-}
-
-span {
-    font-family: 'sora';
+    color: var( --primary-color-alt);
 }
 
 label {
     font-size: 18px;
-    font-family: 'sora';
     line-height: 1.2em;
 }
 
