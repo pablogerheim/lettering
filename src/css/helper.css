@@ -625,12 +625,11 @@
         align-items: flex-start;
         width: 40%;
         padding: 7% 0% 10% 0;
+        margin-right: 16px;
+        max-width: 520px;
     }
     .card2-h3 {
         margin-top: 0%;
-    }
-    .text2 {
-        /* width: 465px; */
     }
     .card-3 {
         padding: 10% 0 10% 0;
@@ -679,6 +678,7 @@
     }
     .flex8 {
         padding: 7% 4% 0% 4%;
+        max-width: 1220px;
     }
     .map8 {
         margin: 6px;
