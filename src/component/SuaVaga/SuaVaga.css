@@ -1,0 +1,64 @@
+.suaVaga {
+    background-color: var(--primary-color-alt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25% 5% 7% 5%;
+}
+
+.suaVaga-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 7% 3% 7% 3%;
+}
+
+.suaVaga-garantias {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5%;
+}
+
+.suaVaga-title {
+    font-weight: 800;
+    line-height: 1.4em;
+}
+
+.suaVaga-subtitle {
+    font-weight: 500;
+}
+
+.suaVaga-map {
+    display: flex;
+    width: 90%;
+}
+
+.suaVaga-icon {
+    color: var(--secondary-color);
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-self: top;
+    margin: 0 2% 0 0;
+    font-size: 35px;
+}
+
+.suaVaga-text {
+    color: var( --primary-color);
+    font-weight: 500;
+    margin: 5px 20px 5px 0;
+    text-align: left;
+}
+
+@media screen and (min-width: 935px) {
+    .suaVaga {
+        padding: 5% 5% 7% 5%;
+    }
+    .suaVaga-box {
+        padding: 4% 3% 5% 3%;
+    }
+    .suaVaga-img {
+        margin: 5% 0% 0% 5%;
+        width: 80%;
+    }
+}

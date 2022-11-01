@@ -1,0 +1,30 @@
+.introducao {
+    background-image: url("../img/mobile/MOBILE_BG-LNP_VENDAS01_HERO-V00.1.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introducao-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-top: 55%;
+    max-width: 520px;
+}
+
+@media screen and (min-width: 935px) {
+    .introducao {
+        background-image: url("../../img/BG-HERO-VENDAS01-LNP-V003-1.jpg.webp");
+        align-items: flex-start;
+        background-size: contain;
+        padding-bottom: 10%;
+    }
+    .introducao-div {
+        padding: 6% 0 0 12%;
+    }
+}

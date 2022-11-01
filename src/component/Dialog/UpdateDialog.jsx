@@ -1,6 +1,6 @@
-import '../css/helper.css';
+import './UpdateDialog.css';
 import { useState } from 'react';
-import { api } from "../data/api";
+import { api } from "../../data/api";
 
 function UpdateDialog({
     setOpen,
@@ -66,4 +66,4 @@ function UpdateDialog({
         </div>
     );
 }
-export { UpdateDialog };
+export default UpdateDialog 

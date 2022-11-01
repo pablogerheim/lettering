@@ -1,0 +1,24 @@
+.faixa1 {
+    background-color: var(--primary-color-alt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5% 10% 5%;
+}
+
+.faixa1-h3 {
+    color: #fff;
+}
+
+@media screen and (min-width: 935px) {
+    .faixa1 {
+        flex-direction: row;
+        padding: 6%;
+    }
+    .faixa1-h3 {
+        text-align: left;
+        width: 600px;
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+}

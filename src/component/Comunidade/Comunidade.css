@@ -1,0 +1,23 @@
+.comunidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 7% 10% 7%;
+}
+
+.comunidade-img {
+    width: 360px;
+    height: 230px;
+}
+
+@media screen and (min-width: 935px) {
+    .comunidade {
+        flex-direction: row;
+        padding: 5% 4% 0% 2%;
+    }
+    .comunidade-img {
+        width: 560px;
+        height: 370px;
+        margin: 3%;
+    }
+}

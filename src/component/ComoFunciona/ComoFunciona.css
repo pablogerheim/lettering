@@ -1,0 +1,38 @@
+.comoFunciona {
+    background-image: url("../img/mobile/MOBILE_BG-LNP_VENDAS01_CURSO_V00.1.jpg.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comoFunciona-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 100% 0 20% 0;
+}
+
+.comoFunciona-h3 {
+    margin-top: 20%;
+}
+
+@media screen and (min-width: 935px) {
+    .comoFunciona {
+        background-image: url("../../img/BG-CURSO-VENDAS01-LNP-V003-1.jpg.webp");
+        align-items: flex-end;
+    }
+    .comoFunciona-div {
+        align-items: flex-start;
+        width: 40%;
+        padding: 7% 0% 10% 0;
+        margin-right: 16px;
+        max-width: 520px;
+    }
+    .comoFunciona-h3 {
+        margin-top: 0%;
+    }
+}

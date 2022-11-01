@@ -1,0 +1,48 @@
+.bonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10% 20% 10%;
+    fill: var(--primary-color-alt);
+    stroke: var(--primary-color-alt);
+    stroke-miterlimit: 10;
+}
+
+.bonus-img {
+    height: 260px;
+    border-radius: 5px;
+    margin: 5% 5% 5% 0%;
+}
+
+.bonus-icon {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+.bonus-title {
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.bonus-div {
+    display: flex;
+}
+
+@media screen and (min-width: 935px) {
+    .bonus {
+        padding: 0 10% 10% 10%;
+    }
+    .bonus-box {
+        display: flex;
+    }
+    .bonus-img {
+        height: 360px;
+        margin: 5%;
+    }
+    .bonus-icon {
+        height: 50px;
+        width: 50px;
+        margin: 30px 0 10px 0;
+    }
+}

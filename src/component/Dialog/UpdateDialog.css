@@ -1,0 +1,73 @@
+.dialogStyles {
+    width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogCloseButtonStyles {
+    background-color: var(--primary-color-alt);
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 5% 5% 0% 5%;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.dialogLabel {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.dialogHead {
+    background-color: var(--primary-color-alt);
+}
+
+.dialogTitle {
+    color: #fff;
+}
+
+.dialogText {
+    color: #fff;
+    padding: 0 5% 5% 5%;
+}
+
+.dialogButtonSub {
+    background-color: var( --secondary-color);
+    margin: 5% 0% 0% 0%;
+    border-radius: 5px;
+    border: none;
+    padding: 10% 5% 10% 5%;
+    font-weight: 500;
+    font-family: 'sora';
+    font-size: 18px;
+    height: 92px;
+}
+
+@media screen and (min-width: 935px) {
+    .dialogStyles {
+        width: 40%;
+    }
+}

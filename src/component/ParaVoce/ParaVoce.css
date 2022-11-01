@@ -1,0 +1,45 @@
+.paraVoce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20% 0 20% 0;
+    background-color: rgb(250, 250, 250);
+}
+
+.paraVoce-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.paraVoce-h3 {
+    padding: 0 15%;
+}
+
+.paraVoce-icon {
+    font-size: 60px;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+    fill: #006778;
+    stroke: #006778;
+    stroke-miterlimit: 10;
+}
+
+.paraVoce-icon-1 {
+    font-size: 60px;
+    width: 0.7em;
+    height: 1em;
+    position: relative;
+    display: block;
+    fill: #006778;
+    stroke: #006778;
+    stroke-miterlimit: 10;
+}
+
+@media screen and (min-width: 935px) {
+    .paraVoce {
+        padding: 10% 0 10% 0;
+    }
+}
