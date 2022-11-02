@@ -5,7 +5,7 @@ import { v4 } from "uuid";
 function Professora() {
   return (
     <section className="professora">
-      <div className="professora-div">
+      <div className="professora__content">
         <h3>Sua Professora</h3>
         <div>
           {professora.map((p) => (

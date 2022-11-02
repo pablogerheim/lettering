@@ -23,7 +23,7 @@ function DuvidasFrequentes() {
         <div>
           {perguntas.map((p) => (
             <div key={v4()}>
-              <div className="duvidas-div">
+              <div className="duvidas__content">
                 <button
                   className="duvidas-button"
                   onClick={() => card17ControleDetalhePergunta(p.id)}
