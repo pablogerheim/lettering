@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 95% 3% 7% 3%;
+    padding: 2em;
 }
 
 .professora__content {
@@ -15,21 +15,28 @@
     flex-direction: column;
     align-items: center;
     border-radius: 25px;
-    padding: 7% 1% 7% 1%;
+    margin-top: 100%;
+    padding: 1em 0;
 }
 
-.professora-map {
-    padding: 3% 5% 3% 5%;
+.professora__map {
+    padding: 1em;
 }
 
-@media screen and (min-width: 935px) {
+@media screen and (min-width: 640px) {
+    .professora__content {
+        max-width: 640px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .professora {
         background-image: url("../../img/BG-LNP_VENDAS01_BIO-V09.jpg.webp");
-        padding: 10% 10% 10% 10%;
+        padding: 2em;
         background-size: auto;
     }
     .professora__content {
-        padding: 5% 1% 5% 1%;
-        width: 30%;
+        max-width: 420px;
+        margin-top: 15em;
     }
 }

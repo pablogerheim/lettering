@@ -2,20 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 5% 10% 5%;
+    padding: 2em;
     background-color: rgb(250, 250, 250);
+    margin-bottom: 4em;
 }
 
-.alunos-h3 {
-    margin-top: 20%;
-}
-
-@media screen and (min-width: 935px) {
-    .alunos {
-        padding: 0% 5% 10% 5%;
-    }
-    .alunos-h3 {
-        margin-top: 10%;
-        width: 650px;
-    }
+.alunos__title {
+    margin-top: 3em;
 }

@@ -18,26 +18,26 @@ function DuvidasFrequentes() {
 
   return (
     <section className="duvidas">
-      <div className="duvidas-box">
-        <h3 className="duvidas-title"> Dúvidas Frequentes <br /></h3>
+      <div className="duvidas__box">
+        <h3 className="duvidas__title"> Dúvidas Frequentes <br /></h3>
         <div>
           {perguntas.map((p) => (
             <div key={v4()}>
               <div className="duvidas__content">
                 <button
-                  className="duvidas-button"
+                  className="duvidas__button"
                   onClick={() => card17ControleDetalhePergunta(p.id)}
                 >
                   <p
                     className={
-                      !isHiddenPergunta(p.id) ? `duvidas-text` : "duvidas-text-active"
+                      !isHiddenPergunta(p.id) ? `duvidas__text` : "duvidas__text-active"
                     }
                   >
                     {!isHiddenPergunta(p.id) ? `+` : "-"} {p.button}
                   </p>
                 </button>
               </div>
-              <p className={!isHiddenPergunta(p.id) ? `hidden` : "duvidas-p"}>
+              <p className={!isHiddenPergunta(p.id) ? `hidden` : "duvidas__p"}>
                 {p.text}
               </p>
             </div>

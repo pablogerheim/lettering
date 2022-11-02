@@ -3,7 +3,7 @@ import "./Alunos.css";
 function Alunos(props) {
   return (
     <section className="alunos">
-      <h3 className="alunos-h3">
+      <h3 className="alunos__title">
         Veja o que alguns alunos, já estão fazendo em poucas semanas de
         curso
       </h3>

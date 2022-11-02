@@ -4,7 +4,7 @@ import Button from "../../component/Button/Button";
 function Faixa1() {
   return (
     <div className="faixa1">
-      <h3 className="faixa1-h3 align-left">
+      <h3 className="faixa1__title">
         Inscreva-se agora no Curso Lettering na Prática e desperte a artista
         dentro de você.
       </h3>

@@ -8,24 +8,24 @@ import React from "react";
 function SuaVaga({setOpen}) {
   return (
     <section className="suaVaga" id="garantirVaga">
-      <div className="suaVaga-box">
+      <div className="suaVaga__box">
         <p>
-          <b className="suaVaga-title">GARANTA SUA VAGA</b>
+          <b className="suaVaga__title">GARANTA SUA VAGA</b>
           <span>
             <br />
           </span>
         </p>
         <p>
-          <b className="suaVaga-subtitle">COMECE AGORA E RECEBA</b>
+          <b className="suaVaga__subtitle">COMECE AGORA E RECEBA</b>
           <span>
             <br />
           </span>
         </p>
-        <div className="suaVaga-garantias">
+        <div className="suaVaga__garantias">
           {receba.map((r) => (
-            <div key={v4()} className="suaVaga-map">
-                  <div className="suaVaga-icon"> <BsCheckLg/> </div>
-              <p className="suaVaga-text"> {r} </p>
+            <div key={v4()} className="suaVaga__map">
+                  <div className="suaVaga__icon"> <BsCheckLg/> </div>
+              <p className="suaVaga__text"> {r} </p>
             </div>
           ))}
         </div>
@@ -45,9 +45,9 @@ function SuaVaga({setOpen}) {
 
         <h3>Ou R$ 197 à vista</h3>
         <h3>ESSA OFERTE LIMITADA POR VAGAS</h3>
-        <span className="suaVaga-title">VAGAS 77% PREENCHIDAS</span>
+        <span className="suaVaga__title">VAGAS 77% PREENCHIDAS</span>
         <img
-          className="suaVaga-img"
+          className="suaVaga__img"
           alt="seguro"
           src="https://camilapegado.com.br/wp-content/uploads/2022/05/Card-pagamento-V1.jpg"
         />

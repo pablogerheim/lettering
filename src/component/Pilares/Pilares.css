@@ -1,18 +1,24 @@
-.pilares {
-    background-image: url("../img/mobile/MOBILE_BG-LNP_VENDAS01_S03-V00.1.jpg.webp");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 95% 5% 0 5%;
-}
-
-@media screen and (min-width: 935px) {
     .pilares {
-        background-image: url("../../img/BG-LNP_VENDAS01_S03-V005.jpg.webp");
-        padding: 30% 5% 2% 5%;
-        background-size: contain;
+        background-image: url("../../img/mobile/MOBILE_BG-LNP_VENDAS01_S03-V00.1.jpg.webp");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
     }
-}
+    
+    .pilares__text {
+        margin-top: 90%;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .pilares {
+            background-image: url("../../img/BG-LNP_VENDAS01_S03-V005.jpg.webp");
+            background-size: auto;
+        }
+        .pilares__text {
+            margin-top: 15em;
+        }
+    }

@@ -3,7 +3,7 @@ import "./Pilares.css";
 function Pilares() {
   return (
     <section className="pilares">
-    <h3>Esses são os 3 pilares para aprender o desenho das letras.</h3>
+    <h3 className="pilares__text">Esses são os 3 pilares para aprender o desenho das letras.</h3>
     <p>
       <span>
         Você não precisa saber desenhar, ou ter materiais caros para

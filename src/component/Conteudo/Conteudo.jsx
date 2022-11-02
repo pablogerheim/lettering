@@ -25,10 +25,10 @@ function Conteudo() {
       </p>
       <div className="conteudo__content">
         {conteudo.map((c) => (
-          <div className="conteudo-map" key={v4()}>
-            <img className="conteudo-img" src={`${c.img}`} alt="imagen do modulo" />
+          <div className="conteudo__map" key={v4()}>
+            <img className="conteudo__img" src={`${c.img}`} alt="imagen do modulo" />
             <button
-              className="conteudo-button"
+              className="conteudo__button"
               onClick={() => card8ControleDetalheModulo(c.id)}
             >
               Ver Detalhes
@@ -44,3 +44,7 @@ function Conteudo() {
 }
 
 export default Conteudo;
+
+
+
+

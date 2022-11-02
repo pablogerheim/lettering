@@ -9,7 +9,7 @@ function Professora() {
         <h3>Sua Professora</h3>
         <div>
           {professora.map((p) => (
-            <p className="professora-map align-left" key={v4()}>
+            <p className="professora__map align-left" key={v4()}>
               {p}
             </p>
           ))}

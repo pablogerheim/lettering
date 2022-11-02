@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7%;
+    padding: 2em;
 }
 
 .duvidas__content {
@@ -11,7 +11,7 @@
     padding: 10px;
 }
 
-.duvidas-button {
+.duvidas__button {
     color: var(--primary-color);
     border: none;
     background-color: rgb(250, 250, 250);
@@ -21,48 +21,37 @@
     justify-items: left;
 }
 
-.duvidas-text {
+.duvidas__text {
     text-align: left;
 }
 
-.duvidas-p {
+.duvidas__p {
     display: table-caption;
     width: fit-content;
     transition: 0.5;
+    text-align: left;
+    padding-left: 1em;
 }
 
-
-/* .icon17 {
-    color: var(--primary-color);
-    width: 14px;
-    height: 14px;
-} */
-
-.duvidas-text-active {
+.duvidas__text-active {
     text-align: left;
     color: var(--secondary-color);
 }
 
-
-/* .icon172 {
-    color: var(--secondary-color);
-    width: 14px;
-    height: 14px;
-} */
-
-@media screen and (min-width: 935px) {
+@media screen and (min-width: 1024px) {
     .duvidas {
         padding: 0;
         height: 380px;
+        margin-bottom: 2em;
     }
-    .duvidas-box {
+    .duvidas__box {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: center;
         width: 90%;
     }
-    .duvidas-title {
+    .duvidas__title {
         margin-right: 3%;
         min-width: 300px;
     }
