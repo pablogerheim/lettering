@@ -5,7 +5,7 @@ import { v4 } from "uuid";
 import { useSearchParams } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import UpdateDialog from "./component/Dialog/UpdateDialog";
-import Introducao from "./component/Introducao/Introducao";
+import Intro from "./component/Intro/Intro";
 import ComoFunciona from "./component/ComoFunciona/ComoFunciona";
 import ParaVoce from "./component/ParaVoce/ParaVoce";
 import Pilares from "./component/Pilares/Pilares";
@@ -46,7 +46,7 @@ function App() {
         />
       )}
       <main className={!open ? "direction" : "opacity"}>
-        <Introducao />
+        <Intro />
         <ComoFunciona />
         <ParaVoce />
         <Pilares />

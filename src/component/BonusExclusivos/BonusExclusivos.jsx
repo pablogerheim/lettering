@@ -5,7 +5,7 @@ function BonusExclusivos() {
     <section className="bonus">
     <h3>Inscreva-se hoje e ganhe mais 2 Bônus Exclusivos</h3>
     <div className="bonus-box">
-      <div className="bonus-div">
+      <div className="bonus__content">
         <img
           className="bonus-img"
           alt="bonus01"
@@ -31,7 +31,7 @@ function BonusExclusivos() {
           </p>
         </div>
       </div>
-      <div className="bonus-div">
+      <div className="bonus__content">
         <img
           className="bonus-img"
           alt="bonus01"

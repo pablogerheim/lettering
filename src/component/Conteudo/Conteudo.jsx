@@ -23,7 +23,7 @@ function Conteudo() {
         Cada detalhe foi pensado para que mesmo sendo iniciante você consiga
         fazer artes lindas e profissionais.
       </p>
-      <div className="conteudo-div">
+      <div className="conteudo__content">
         {conteudo.map((c) => (
           <div className="conteudo-map" key={v4()}>
             <img className="conteudo-img" src={`${c.img}`} alt="imagen do modulo" />

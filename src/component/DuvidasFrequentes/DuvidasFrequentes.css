@@ -5,7 +5,7 @@
     padding: 7%;
 }
 
-.duvidas-div {
+.duvidas__content {
     display: flex;
     align-items: center;
     padding: 10px;

@@ -1,10 +1,10 @@
-import "./Introducao.css";
+import "./Intro.css";
 import Button from "../Button/Button";
 
-function Introducao() {
+function Intro() {
   return (
-    <section className="introducao">
-    <div className="introducao-div">
+    <section className="intro">
+    <div className="intro__content">
       <h1>
         <span className="yellow">Curso de Lettering:</span> Aprenda a
         fazer artes lindas<span className="yellow"> em até 30 dias</span>{" "}
@@ -29,4 +29,4 @@ function Introducao() {
   );
 }
 
-export default Introducao;
+export default Intro;

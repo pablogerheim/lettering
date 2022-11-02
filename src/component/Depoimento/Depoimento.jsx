@@ -4,7 +4,7 @@ function Depoimento() {
   return (
     <section className="depoimento">
     <h3>Depoimento dos Alunos</h3>
-    <div className="depoimento-div">
+    <div className="depoimento__content">
       <iframe
         className="video"
         src="https://www.youtube.com/embed/lGr-Ko8iAog"
