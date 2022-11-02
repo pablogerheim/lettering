@@ -24,7 +24,7 @@
     align-self: flex-end;
     margin: 5% 5% 0% 5%;
     color: #fff;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
 }
 
@@ -62,7 +62,7 @@
     padding: 10% 5% 10% 5%;
     font-weight: 500;
     font-family: 'sora';
-    font-size: 18px;
+    font-size: 1.125rem;
     height: 92px;
 }
 
