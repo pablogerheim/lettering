@@ -9,8 +9,12 @@
         padding: 2em;
     }
     
-    .pilares__text {
+    .pilares h3 {
         margin-top: 90%;
+    }
+
+    .pilares__content {
+        max-width: 640px;
     }
     
     @media screen and (min-width: 1024px) {
@@ -18,7 +22,7 @@
             background-image: url("../../img/BG-LNP_VENDAS01_S03-V005.jpg.webp");
             background-size: auto;
         }
-        .pilares__text {
+        .pilares h3 {
             margin-top: 15em;
         }
     }
