@@ -10,11 +10,35 @@
     }
     
     .pilares h3 {
-        margin-top: 90%;
+        margin-top: 14em;
     }
 
     .pilares__content {
         max-width: 640px;
+    }
+
+    @media screen and (min-width: 520px) {
+        .pilares h3 {
+            margin-top: 17em;
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        .pilares h3 {
+            margin-top: 20em;
+        }
+    }
+
+    @media screen and (min-width: 740px) {
+        .pilares h3 {
+            margin-top: 24em;
+        }
+    }
+
+    @media screen and (min-width: 920px) {
+        .pilares h3 {
+            margin-top: 30em;
+        }
     }
     
     @media screen and (min-width: 1024px) {

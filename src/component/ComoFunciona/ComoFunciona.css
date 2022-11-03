@@ -44,7 +44,8 @@
 
 @media screen and (min-width: 1024px) {
   .comoFunciona {
-    min-height: 280px;
+    min-height: 480px;
+    justify-content: center;
   }
   .comoFunciona__content {
     margin-left: 34em;
