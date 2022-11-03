@@ -121,18 +121,18 @@ const perguntas = [
 const url =
   "https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe#t=00h00m15s";
 const imgAlunos = [
-    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_1.jpg", alt: ""},
-    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_2.jpg", alt: ""},
-    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_3.jpg", alt: ""},
-    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_4.jpg", alt: ""},
-    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_5.jpg", alt: ""},
+    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_1.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_1.jpg"},
+    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_2.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_2.jpg"},
+    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_3.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_3.jpg"},
+    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_4.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_4.jpg"},
+    {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_5.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_5.jpg"},
 ];
 const imgCamila = [
-  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-01.jpg", alt: ""},
-  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-02.jpg", alt: ""},
-  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-03.jpg", alt: ""},
-  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-04.jpg", alt: ""},
-  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-05.jpg", alt: ""}
+  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-01.jpg", alt: "IMG-LNP-VENDAS01-ARTE-CAMILA-01.jpg"},
+  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-02.jpg", alt: "IMG-LNP-VENDAS01-ARTE-CAMILA-02.jpg"},
+  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-03.jpg", alt: "IMG-LNP-VENDAS01-ARTE-CAMILA-03.jpg"},
+  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-04.jpg", alt: "IMG-LNP-VENDAS01-ARTE-CAMILA-04.jpg"},
+  {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-05.jpg", alt: "IMG-LNP-VENDAS01-ARTE-CAMILA-05.jpg"}
 ];
 
 export {
