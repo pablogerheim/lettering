@@ -1,9 +1,6 @@
 import "./css/helper.css";
 import { useState } from "react";
-import { imgAlunos, imgCamila } from "./data/mock.js";
-import { v4 } from "uuid";
 import { useSearchParams } from "react-router-dom";
-import Carousel from "react-elastic-carousel";
 import UpdateDialog from "./component/Dialog/UpdateDialog";
 import Intro from "./component/Intro/Intro";
 import ComoFunciona from "./component/ComoFunciona/ComoFunciona";
@@ -25,17 +22,8 @@ import WhatsApp from "./component/WhatsApp/WhatsApp";
 import Footer from "./component/Footer/Footer";
 
 function App() {
-  const [imgA] = useState([...imgAlunos]);
-  const [imgB] = useState([...imgCamila]);
   const [open, setOpen] = useState(false);
   const [searchParams] = useSearchParams();
-
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 850, itemsToShow: 3 },
-    { width: 1150, itemsToShow: 4 },
-  ];
 
   return (
     <>
@@ -50,38 +38,14 @@ function App() {
         <ComoFunciona />
         <ParaVoce />
         <Pilares />
-        <Alunos >
-          <Carousel breakPoints={breakPoints}>
-            {imgA.map((item) => (
-              <div key={v4()}>
-                <img
-                  className="imgAluno"
-                  alt="imagem aluno"
-                  src={`${item}`}
-                />
-              </div>
-            ))}
-          </Carousel>
-        </Alunos>
+        <Alunos />
         <Faixa1 />
         <Comunidade />
         <Conteudo />
         <BonusExclusivos />
         <SuaVaga setOpen={setOpen} />
         <Depoimento />
-        <FacaArtes>
-          <Carousel breakPoints={breakPoints}>
-            {imgB.map((item) => (
-              <div key={v4()}>
-                <img
-                  className="imgAluno"
-                  alt="imagem aluno"
-                  src={`${item}`}
-                />
-              </div>
-            ))}
-          </Carousel>
-        </FacaArtes>
+        <FacaArtes />
         <Professora />
         <Faixa2 setOpen={setOpen} />
         <Garantia />

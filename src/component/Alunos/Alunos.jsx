@@ -1,4 +1,6 @@
 import "./Alunos.css";
+import { imgAlunos } from "../../data/mock"
+import CarouselCustom from "../CarouselCustom/CarouselCustom";
 
 function Alunos(props) {
   return (
@@ -9,7 +11,7 @@ function Alunos(props) {
       </h3>
       <p>A maioria desses alunos nunca tinha desenhado antes. </p>
       <div className="box450">
-        {props.children}
+        <CarouselCustom className="imgAluno" imagesList={imgAlunos} />
       </div>
     </section>
   );
