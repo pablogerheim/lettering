@@ -12,13 +12,11 @@ function SuaVaga({setOpen}) {
         <p>
           <b className="suaVaga__title">GARANTA SUA VAGA</b>
           <span>
-            <br />
           </span>
         </p>
         <p>
           <b className="suaVaga__subtitle">COMECE AGORA E RECEBA</b>
           <span>
-            <br />
           </span>
         </p>
         <div className="suaVaga__garantias">

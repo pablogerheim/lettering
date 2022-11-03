@@ -21,7 +21,7 @@ const receba = [
   "Acesso vitalício ao curso",
   "Certificado de Conclusão",
   "7 dias de Garantia",
-  " 70% de Desconto",
+  "70% de Desconto",
 ];
 const conteudo = [
   {
