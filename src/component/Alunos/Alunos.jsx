@@ -2,7 +2,7 @@ import "./Alunos.css";
 import { imgAlunos } from "../../data/mock"
 import CarouselCustom from "../CarouselCustom/CarouselCustom";
 
-function Alunos(props) {
+function Alunos() {
   return (
     <section className="alunos">
       <h3 className="alunos__title">
