@@ -1,7 +1,6 @@
 import "./Conteudo.css";
 import { conteudo } from "../../data/mock.js";
 import { useState } from "react";
-import { v4 } from "uuid";
 
 function Conteudo() {
   const [detalhesModulo, setDetalhesModulo] = useState([]);
@@ -24,8 +23,8 @@ function Conteudo() {
         fazer artes lindas e profissionais.
       </p>
       <div className="conteudo__content">
-        {conteudo.map((c) => (
-          <div className="conteudo__map" key={v4()}>
+        {conteudo.map((c, index) => (
+          <div className="conteudo__map" key={index}>
             <img className="conteudo__img" src={`${c.img}`} alt="imagen do modulo" />
             <button
               className="conteudo__button"

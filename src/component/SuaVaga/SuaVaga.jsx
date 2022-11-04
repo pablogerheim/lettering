@@ -1,7 +1,6 @@
 import "./SuaVaga.css";
 import Button from "../../component/Button/Button";
 import { receba } from "../../data/mock.js";
-import { v4 } from "uuid";
 import { BsCheckLg } from 'react-icons/bs';
 import React from "react";
 
@@ -20,8 +19,8 @@ function SuaVaga({setOpen}) {
           </span>
         </p>
         <div className="suaVaga__garantias">
-          {receba.map((r) => (
-            <div key={v4()} className="suaVaga__map">
+          {receba.map((r, index) => (
+            <div key={index} className="suaVaga__map">
                   <div className="suaVaga__icon"> <BsCheckLg/> </div>
               <p className="suaVaga__text"> {r} </p>
             </div>

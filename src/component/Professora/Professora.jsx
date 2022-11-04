@@ -1,6 +1,5 @@
 import "./Professora.css";
 import {  professora} from "../../data/mock.js";
-import { v4 } from "uuid";
 
 function Professora() {
   return (
@@ -8,8 +7,8 @@ function Professora() {
       <div className="professora__content">
         <h3>Sua Professora</h3>
         <div>
-          {professora.map((p) => (
-            <p className="professora__map align-left" key={v4()}>
+          {professora.map((p, index) => (
+            <p className="professora__map align-left" key={index}>
               {p}
             </p>
           ))}

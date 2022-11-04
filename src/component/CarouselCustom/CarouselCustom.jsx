@@ -1,6 +1,5 @@
 import "./CarouselCustom.css";
 import Carousel from "react-elastic-carousel";
-import { v4 } from "uuid";
 
 function CarouselCustom(Props) {
   const breakPoints = [
@@ -11,9 +10,9 @@ function CarouselCustom(Props) {
   ];
   return (
     <Carousel breakPoints={breakPoints}>
-      {Props.imagesList.map((item) => (
-        <div key={v4()} infiniteLoop={true}>
-          <img className={Props.className} alt={item.alt} src={item.img} />
+      {Props.imagesList.map((item, index) => (
+        <div className={Props.className} key={index}>
+          <img alt={item.alt} src={item.img} />
         </div>
       ))}
     </Carousel>

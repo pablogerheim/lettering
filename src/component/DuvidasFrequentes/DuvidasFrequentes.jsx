@@ -1,6 +1,5 @@
 import "./DuvidasFrequentes.css";
 import { perguntas } from "../../data/mock.js";
-import { v4 } from "uuid";
 import { useState } from "react";
 
 function DuvidasFrequentes() {
@@ -21,8 +20,8 @@ function DuvidasFrequentes() {
       <div className="duvidas__box">
         <h3 className="duvidas__title"> Dúvidas Frequentes <br /></h3>
         <div>
-          {perguntas.map((p) => (
-            <div key={v4()}>
+          {perguntas.map((p, index) => (
+            <div key={index}>
               <div className="duvidas__content">
                 <button
                   className="duvidas__button"
