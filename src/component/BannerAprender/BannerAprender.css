@@ -1,4 +1,4 @@
-.faixa1 {
+.banner-aprender {
     background-color: var(--primary-color-alt);
     display: flex;
     flex-direction: column;
@@ -7,19 +7,17 @@
     padding: 2em;
 }
 
-.faixa1__title {
+.banner-aprender h3 {
     color: #fff;
+    max-width: 640px;
 }
 
 @media screen and (min-width: 1024px) {
-    .faixa1 {
+    .banner-aprender {
         flex-direction: row;
-        margin-top: 2em;
     }
-    .faixa1__title {
+    .banner-aprender h3 {
         text-align: left;
         margin: 0 1em;
-        padding: 0 1em;
-        max-width: 700px;
     }
 }

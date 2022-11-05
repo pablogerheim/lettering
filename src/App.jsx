@@ -7,7 +7,7 @@ import ComoFunciona from "./component/ComoFunciona/ComoFunciona";
 import ParaVoce from "./component/ParaVoce/ParaVoce";
 import Pilares from "./component/Pilares/Pilares";
 import Alunos from "./component/Alunos/Alunos";
-import Faixa1 from "./component/Faixa1/Faixa1.jsx";
+import BannerAprender from "./component/BannerAprender/BannerAprender.jsx";
 import Comunidade from "./component/Comunidade/Comunidade";
 import Conteudo from "./component/Conteudo/Conteudo";
 import BonusExclusivos from "./component/BonusExclusivos/BonusExclusivos";
@@ -15,7 +15,7 @@ import SuaVaga from "./component/SuaVaga/SuaVaga";
 import Depoimento from "./component/Depoimento/Depoimento";
 import FacaArtes from "./component/FacaArtes/FacaArtes";
 import Professora from "./component/Professora/Professora";
-import Faixa2 from "./component/Faixa2/Faixa2.jsx";
+import BannerAgora from "./component/BannerAgora/BannerAgora.jsx";
 import Garantia from "./component/Garantia/Garantia";
 import DuvidasFrequentes from "./component/DuvidasFrequentes/DuvidasFrequentes";
 import WhatsApp from "./component/WhatsApp/WhatsApp";
@@ -39,7 +39,7 @@ function App() {
         <ParaVoce />
         <Pilares />
         <Alunos />
-        <Faixa1 />
+        <BannerAprender />
         <Comunidade />
         <Conteudo />
         <BonusExclusivos />
@@ -47,7 +47,7 @@ function App() {
         <Depoimento />
         <FacaArtes />
         <Professora />
-        <Faixa2 setOpen={setOpen} />
+        <BannerAgora setOpen={setOpen} />
         <Garantia />
         <DuvidasFrequentes />
         <WhatsApp />

@@ -1,16 +1,16 @@
-import "./Faixa1.css";
-import Button from "../../component/Button/Button";
+import "./BannerAprender.css";
+import Button from "../Button/Button";
 
-function Faixa1() {
+function BannerAprender() {
   return (
-    <div className="faixa1">
-      <h3 className="faixa1__title">
+    <section className="banner-aprender">
+      <h3>
         Inscreva-se agora no Curso Lettering na Prática e desperte a artista
         dentro de você.
       </h3>
       <Button href={"#garantirVaga"}>Eu quero aprender Lettering!</Button>
-    </div>
+    </section>
   );
 }
 
-export default Faixa1;
+export default BannerAprender;
