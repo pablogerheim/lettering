@@ -1,0 +1,19 @@
+.carousel__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 16px;
+}
+
+.carousel__image {
+    height: 250px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel__content {
+        width: 800px;
+        margin: 24px;
+    }
+}
