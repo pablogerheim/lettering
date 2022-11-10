@@ -5,7 +5,6 @@ function Comunidade() {
     <section className="comunidade">
       <div className="comunidade__content">
         <img
-          className="comunidade__img"
           alt="notebook"
           src="https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_comunidade-V01-1-1024x678.jpg"
         />
