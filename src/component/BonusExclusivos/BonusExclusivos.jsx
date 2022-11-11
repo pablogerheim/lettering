@@ -11,7 +11,6 @@ function BonusExclusivos() {
             alt="bonus01"
             src="https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_BONUS-V01-01.jpg"
           />
-          <div>
             <svg
               className="bonus__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +27,7 @@ function BonusExclusivos() {
                 redes sociais.
               </p>
             </div>
-          </div>
+         
         </div>
         <div className="bonus__content">
           <img
@@ -36,7 +35,7 @@ function BonusExclusivos() {
             alt="bonus01"
             src="https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_BONUS-V01-02.jpg"
           />
-          <div>
+        
             <svg
               className="bonus__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +49,11 @@ function BonusExclusivos() {
                 Aprenda a fazer elementos decorativos para destacar as
                 frases do seu lettering.
               </p>
-            </div>
+
           </div>
         </div>
       </div>
-      <h3>Somando são mais de R$100 reais em bônus.</h3>
+      <h3 className="bonus__footer">Somando são mais de R$100 reais em bônus.</h3>
     </section>
   );
 }
