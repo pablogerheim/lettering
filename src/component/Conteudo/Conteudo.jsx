@@ -1,6 +1,6 @@
 import "./Conteudo.css";
 import CardText from "../CardText/CardText" 
-import ConteudoItems from "../../data/mock"
+import {ConteudoItems} from "../../data/mock"
 import { useState } from "react"
 
 function Conteudo() {

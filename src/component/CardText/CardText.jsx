@@ -1,4 +1,3 @@
-import { useState } from "react"
 import './CardText.css'
 
 function CardText({ card, setOpen }) {
