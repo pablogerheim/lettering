@@ -42,12 +42,14 @@ function SuaVaga({setOpen}) {
 
         <h3>Ou R$ 197 à vista</h3>
         <h3>ESSA OFERTE LIMITADA POR VAGAS</h3>
+        <div className="suaVaga__footer">
         <span className="suaVaga__title">VAGAS 77% PREENCHIDAS</span>
         <img
           className="suaVaga__img"
           alt="seguro"
           src="https://camilapegado.com.br/wp-content/uploads/2022/05/Card-pagamento-V1.jpg"
         />
+        </div>
       </div>
     </section>
   );

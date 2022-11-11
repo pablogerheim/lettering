@@ -22,6 +22,7 @@
 .suaVaga__title {
     font-weight: 800;
     line-height: 1.4em;
+    margin: 8px 0;
 }
 
 .suaVaga__subtitle {
@@ -48,4 +49,9 @@
     font-weight: 500;
     margin: 0.3em 0.1em;
     text-align: left;
+}
+.suaVaga__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
