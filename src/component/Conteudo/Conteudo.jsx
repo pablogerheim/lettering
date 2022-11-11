@@ -1,41 +1,31 @@
 import "./Conteudo.css";
-import { conteudo } from "../../data/mock.js";
-import { useState } from "react";
+import CardText from "../CardText/CardText" 
+import ConteudoItems from "../../data/mock"
+import { useState } from "react"
 
 function Conteudo() {
-  const [detalhesModulo, setDetalhesModulo] = useState([]);
+  const [conteudo, setConteudo] = useState(ConteudoItems)
 
-  const card8ControleDetalheModulo = (id) => {
-    if (detalhesModulo.includes(id)) {
-      setDetalhesModulo([...detalhesModulo.filter((i) => i !== id)]);
-    } else {
-      setDetalhesModulo([...detalhesModulo, id]);
-    }
-  };
+  const toggleCard = index => {
+    setConteudo(conteudo.map((item, i) => {
+      if (i === index) {
+        item.open = !item.open
+      }
 
-  const isHiddenModulo = (id) => detalhesModulo.includes(id);
+      return item;
+    }))
+  }
 
   return (
     <section className="conteudo">
       <h3>Conteúdo do Curso</h3>
-      <p>
+      <p className="conteudo__subtitle">
         Cada detalhe foi pensado para que mesmo sendo iniciante você consiga
         fazer artes lindas e profissionais.
       </p>
       <div className="conteudo__content">
-        {conteudo.map((c, index) => (
-          <div className="conteudo__map" key={index}>
-            <img className="conteudo__img" src={`${c.img}`} alt="imagen do modulo" />
-            <button
-              className="conteudo__button"
-              onClick={() => card8ControleDetalheModulo(c.id)}
-            >
-              Ver Detalhes
-            </button>
-            <p className={!isHiddenModulo(c.id) ? `hidden ` : ""}>
-              {c.text}
-            </p>
-          </div>
+        {conteudo.map((item) => (
+          <CardText card={item} setOpen={toggleCard}/>
         ))}
       </div>
     </section>
