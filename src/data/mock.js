@@ -23,58 +23,7 @@ const receba = [
   "7 dias de Garantia",
   "70% de Desconto",
 ];
-const conteudo = [
-  {
-    id: 1,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-01.jpg",
-    text: "Neste módulo a professora irá te dar as boas vindas e te explicar como você faz para acessar o grupo vip de alunos onde poderá tirar as suas dúvidas.",
-  },
-  {
-    id: 2,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-02.jpg",
-    text: "Descubra quais são os principais materiais usados para fazer lettering, e quais são as referências de livros e profissionais que podem inspirar seu processo criativo.",
-  },
-  {
-    id: 3,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-03.jpg",
-    text: "Aprenda passo a passo como iniciar um lettering do jeito certo, usando as principais técnicas  para fazer uma arte bonita e harmônica.",
-  },
-  {
-    id: 4,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-04.jpg",
-    text: "Muitas pessoas têm dificuldades de manusear a caneta Brush Pen quando estão começando, nesse módulo você aprende como dominar essa ferramenta.",
-  },
-  {
-    id: 5,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-05.jpg",
-    text: "Aprenda, na prática, todo o processo criativo para fazer um lettering nível profissional.",
-  },
-  {
-    id: 6,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-06.jpg",
-    text: "Aprenda como fazer diversos tipos de alfabetos para usar no seu lettering.",
-  },
-  {
-    id: 7,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-07.jpg",
-    text: "Este módulo incrível já valeria todo seu investimento, aqui você aprende o passo a passo para fazer lindos letterings em paredes.",
-  },
-  {
-    id: 8,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-08.jpg",
-    text: "Aprenda como desenhar suas artes em lousas.",
-  },
-  {
-    id: 9,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-09.jpg",
-    text: "Aprenda na Prática como  Personalizar objetos com a sua arte.",
-  },
-  {
-    id: 10,
-    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-10.jpg",
-    text: "Tenha acesso a gravação de todas as aulas ao vivo.",
-  },
-];
+
 const professora = [
   "Prazer, eu sou Camila Pegado, artista profissional há 6 anos e professora de lettering.",
   "Eu vou te mostrar que fazer um lettering lindo e profissional não precisa ser complicado. Não vou te encher de teorias, aqui você aprende  a desenhar na prática.",
@@ -135,13 +84,86 @@ const imgCamila = [
   {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-05.jpg", alt: "IMG-LNP-VENDAS01-ARTE-CAMILA-05.jpg"}
 ];
 
+const ConteudoItems = [
+  {
+    id: 0,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-01.jpg",
+    alt: "",
+    open: false,
+    text: "Neste módulo a professora irá te dar as boas vindas e te explicar como você faz para acessar o grupo vip de alunos onde poderá tirar as suas dúvidas.",
+  },
+  {
+    id: 1,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-02.jpg",
+    alt: "",
+    open: false,
+    text: "Descubra quais são os principais materiais usados para fazer lettering, e quais são as referências de livros e profissionais que podem inspirar seu processo criativo.",
+  },
+  {
+    id: 2,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-03.jpg",
+    alt: "",
+    open: false,
+    text: "Aprenda passo a passo como iniciar um lettering do jeito certo, usando as principais técnicas  para fazer uma arte bonita e harmônica.",
+  },
+  {
+    id: 3,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-04.jpg",
+    alt: "",
+    open: false,
+    text: "Muitas pessoas têm dificuldades de manusear a caneta Brush Pen quando estão começando, nesse módulo você aprende como dominar essa ferramenta.",
+  },
+  {
+    id: 4,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-05.jpg",
+    alt: "",
+    open: false,
+    text: "Aprenda, na prática, todo o processo criativo para fazer um lettering nível profissional.",
+  },
+  {
+    id: 5,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-06.jpg",
+    alt: "",
+    open: false,
+    text: "Aprenda como fazer diversos tipos de alfabetos para usar no seu lettering.",
+  },
+  {
+    id: 6,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-07.jpg",
+    alt: "",
+    open: false,
+    text: "Este módulo incrível já valeria todo seu investimento, aqui você aprende o passo a passo para fazer lindos letterings em paredes.",
+  },
+  {
+    id: 7,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-08.jpg",
+    alt: "",
+    open: false,
+    text: "Aprenda como desenhar suas artes em lousas.",
+  },
+  {
+    id: 8,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-09.jpg",
+    alt: "",
+    open: false,
+    text: "Aprenda na Prática como  Personalizar objetos com a sua arte.",
+  },
+  {
+    id: 9,
+    img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-10.jpg",
+    alt: "",
+    open: false,
+    text: "Tenha acesso a gravação de todas as aulas ao vivo.",
+  },
+];
+
 export {
   paraVoce,
   receba,
   professora,
   perguntas,
   url,
+  ConteudoItems,
   imgAlunos,
-  conteudo,
   imgCamila,
 };
