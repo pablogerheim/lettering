@@ -1,9 +1,9 @@
 .depoimento {
-    background-color: rgb(250, 250, 250);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
+    background: #fff;
 }
 
 .depoimento__content {
