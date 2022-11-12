@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 1024px) {
     .carousel__content {
-        width: 800px;
+        max-width: 1200px;
         margin: 24px;
     }
 }
