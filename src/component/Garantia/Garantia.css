@@ -2,25 +2,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7% 10% 7% 10%;
+    padding: 2em;
 }
 
-.garantia-text {
+.garantia__text {
     text-align: left;
 }
 
-@media screen and (min-width: 935px) {
+@media screen and (min-width: 640px) {
+    .garantia__text {
+        margin: 1em;
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .garantia {
         flex-direction: row;
         justify-content: center;
     }
-    .garantia-text {
-        margin: 2%;
-        text-align: left;
+    .garantia__text {
+        margin: 1em;
         max-width: 600px;
     }
-    .garantia-title {
-        margin-left: 2%;
+    .garantia__title {
+        margin-left: 1em;
         text-align: left;
     }
 }

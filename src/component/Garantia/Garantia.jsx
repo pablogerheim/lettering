@@ -8,8 +8,8 @@ function Garantia() {
       src="https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_GARANTIA-V02.jpg"
     />
     <div>
-      <h3 className="garantia-title"> Garantia de 7 dias</h3>
-      <p className="garantia-text">
+      <h3 className="garantia__title"> Garantia de 7 dias</h3>
+      <p className="garantia__text">
         <span>
           Estamos comprometidos com a satisfação dos nossos alunos, esse é
           o Curso de Lettering mais completo do mercado.

@@ -1,0 +1,32 @@
+.card-text {
+  width: 150px;
+  margin: 0.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text img {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-text p {
+  background-color: rgba(8, 138, 162, 0.1);
+  height: 0;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.card-text p.open {
+  height: 320px;
+  padding: 8px;
+}
+
+.card-text__button {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 1.25rem;
+  background-color: var(--primary-color-alt);
+  padding: 0.5em;
+  cursor: pointer;
+}

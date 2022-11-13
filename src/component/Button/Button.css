@@ -1,4 +1,4 @@
-.primary-button{
+.primary__button {
     background-color: var( --secondary-color);
     border-radius: 5px;
     font-weight: bold;
@@ -13,59 +13,29 @@
     text-decoration: none;
     transition: all .3s;
     max-width: 520px;
-}
-
-.primary-button:hover,
-.primary-button:focus {
-  color: white;
-  background-color: var( --primary-color);
-}
-
-
-.b1 {
-    margin: 1%;
-    border: none;
-    padding: 10%;
-    width: 510px;
-    height: 70px;
     text-align: center;
-    padding: inherit;
 }
 
-.b6 {
-    width: 434px;
-    height: 74px;
-}
-.b6:hover {
-    background-color: #fff;
-    color: var(--primary-color-alt);
-    transition: 0.3s;
+.primary__button:hover,
+.primary__button:focus {
+    color: white;
+    background-color: var( --primary-color);
 }
 
-.b1 {
-    display: flex;
-    text-decoration: none
-}
-
-.b15:hover {
-    background-color: #fff;
-    color: var(--primary-color-alt);
-    transition: 0.3s;
-}
 @media screen and (min-width: 935px) {
-.buttonSub {
-    background-color: var( --secondary-color);
-    margin: 1%;
-    border-radius: 5px;
-    border: none;
-    padding: 10%;
-    font-weight: 500;
-    font-family: 'sora';
-    font-size: 1.125rem;
-    width: 510px;
-    height: 70px;
-    cursor: pointer;
-    text-align: center;
-    padding: inherit;
-}
+    .buttonSub {
+        background-color: var( --secondary-color);
+        margin: 1%;
+        border-radius: 5px;
+        border: none;
+        padding: 10%;
+        font-weight: 500;
+        font-family: 'sora';
+        font-size: 1.125rem;
+        width: 510px;
+        height: 70px;
+        cursor: pointer;
+        text-align: center;
+        padding: inherit;
+    }
 }

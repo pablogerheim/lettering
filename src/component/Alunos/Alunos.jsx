@@ -1,16 +1,17 @@
 import "./Alunos.css";
+import { imgAlunos } from "../../data/mock";
+import CarouselCustom from "../CarouselCustom/CarouselCustom";
 
-function Alunos(props) {
+function Alunos() {
   return (
     <section className="alunos">
-      <h3 className="alunos-h3">
-        Veja o que alguns alunos, já estão fazendo em poucas semanas de
-        curso
-      </h3>
-      <p>A maioria desses alunos nunca tinha desenhado antes. </p>
-      <div className="box450">
-        {props.children}
+      <div className="alunos__content">
+        <h3>
+          Veja o que alguns alunos, já estão fazendo em poucas semanas de curso
+        </h3>
+        <p>A maioria desses alunos nunca tinha desenhado antes. </p>
       </div>
+      <CarouselCustom imagesList={imgAlunos} />
     </section>
   );
 }

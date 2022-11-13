@@ -5,7 +5,7 @@ function ParaVoce() {
     <section className="paraVoce">
       <h3 className="paraVoce-h3">O Curso de Lettering é para você que:</h3>
       <div className="paraVoce__content">
-        <div className="card">
+        <div className="card-to-you">
           <div className="paraVoce-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ function ParaVoce() {
           </div>
           <p>Nunca fez lettering mas tem vontade de aprender.</p>
         </div>
-        <div className="card">
+        <div className="card-to-you">
           <div className="paraVoce-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ function ParaVoce() {
           </div>
           <p>Já desenha mas quer aprimorar suas técnicas.</p>
         </div>
-        <div className="card">
+        <div className="card-to-you">
           <div className="paraVoce-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ function ParaVoce() {
           </div>
           <p>Deseja despertar o seu potencial artístico.</p>
         </div>
-        <div className="card">
+        <div className="card-to-you">
           <div className="paraVoce-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ function ParaVoce() {
           </div>
           <p>Deseja conhecer um novo hobbie.</p>
         </div>
-        <div className="card">
+        <div className="card-to-you">
           <div className="paraVoce-icon last">
             <svg
               xmlns="http://www.w3.org/2000/svg"

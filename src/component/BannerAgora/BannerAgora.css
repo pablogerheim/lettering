@@ -1,0 +1,19 @@
+.banner-agora {
+    background-color: var(--primary-color-alt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.banner-agora h3{
+    color: #FAFAFA;
+}
+
+.banner-agora h3 span {
+    color: var(--secondary-color);
+    display: block;
+    font-size: 4.38rem;
+    font-weight: 400;
+    line-height: 1.2em;
+}

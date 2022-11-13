@@ -38,16 +38,6 @@
     text-decoration: line-through;
 }
 
-.box450 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 450px;
-    width: 360px;
-    padding-top: 10%;
-    margin: 0 10px 10px 10px;
-}
-
 .hidden {
     display: none;
     transition: 0.5;
@@ -77,23 +67,13 @@
     text-align: left;
 }
 
-.imgAluno {
-    border-radius: 25px;
-    width: 270px;
-    max-height: 430px;
-}
-
 .video-frame {
     width: 100%;
     aspect-ratio: 16 / 9;
 }
 
-@media screen and (min-width: 935px) {
+@media screen and (min-width: 1024px) {
     .align-left {
         text-align: left;
-    }
-    .box450 {
-        width: 800px;
-        padding-top: 5%;
     }
 }
