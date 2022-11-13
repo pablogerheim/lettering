@@ -5,7 +5,7 @@ import { useState } from "react";
 function Faq() {
   const [detalhesPergunta, setDetalhesPergunta] = useState(0);
 
-  const card17ControleDetalhePergunta = (id) => {
+  const escondeEmostraPergunta = (id) => {
     if (detalhesPergunta === id) {
       setDetalhesPergunta(0);
     } else {
@@ -13,7 +13,7 @@ function Faq() {
     }
   };
 
-  const isHiddenPergunta = (id) => detalhesPergunta === id;
+  const perguntaEscondida = (id) => detalhesPergunta === id;
 
   return (
     <section className="faq">
@@ -24,17 +24,17 @@ function Faq() {
             <div
               key={index}
               className="faq__conteudo"
-              onClick={() => card17ControleDetalhePergunta(pergunta.id)}
+              onClick={() => escondeEmostraPergunta(pergunta.id)}
             >
-              <p className={`faq__pergunta ${isHiddenPergunta(pergunta.id) ? "faq__pergunta__ativa" : ""}`}>
+              <p className={`faq__pergunta ${perguntaEscondida(pergunta.id) ? "faq__pergunta__ativa" : ""}`}>
                 {pergunta.button}
                 <span className="faq__pergunta__icone">
-                  {isHiddenPergunta(pergunta.id) ? "-" : "+"}{" "}
+                  {perguntaEscondida(pergunta.id) ? "-" : "+"}{" "}
                 </span>
               </p>
               <p
                 className={`faq__resposta ${
-                  isHiddenPergunta(pergunta.id) ? "faq__resposta__aberta" : ""
+                  perguntaEscondida(pergunta.id) ? "faq__resposta__aberta" : ""
                 }`}
               >
                 {pergunta.text}

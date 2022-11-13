@@ -22,7 +22,7 @@
     text-align: left;
     font-size: .9rem;
     opacity: 0;
-    transition: opacity 2s linear, max-height 1.9s linear;
+    transition: opacity 1s linear, max-height 0.9s linear;
 }
 
 .faq__resposta__aberta {
