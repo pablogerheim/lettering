@@ -31,7 +31,6 @@
 
 .suaVaga__map {
     display: flex;
-    width: 90%;
 }
 
 .suaVaga__icon {
@@ -48,7 +47,6 @@
     color: var( --primary-color);
     font-weight: 500;
     margin: 0.3em 0.1em;
-    text-align: left;
 }
 .suaVaga__footer{
     display: flex;
