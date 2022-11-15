@@ -19,19 +19,19 @@ function UpdateDialog({
     }
 
     return (
-        <div className="dialogStyles">
-            <div className=" dialogHead">
+        <div className="dialog">
+            <div className=" dialog__head">
                 <button
                     onClick={() => setOpen(false)}
-                    className='dialogCloseButtonStyles'
+                    className='dialog__close--button'
                 >
                     X
                 </button>
-                <h3 className='dialogTitle'>CRIE SEU ACESSO AGORA </h3>
-                <p className='dialogText'>Digite os dados que você usará para acessar o Curso Lettering na Prática.</p>
+                <h3 className='dialog__title'>CRIE SEU ACESSO AGORA </h3>
+                <p className='dialog__text'>Digite os dados que você usará para acessar o Curso Lettering na Prática.</p>
             </div>
-            <form className='dialog'>
-                <label className="dialogLabel">
+            <form className='dialog__form'>
+                <label className="dialog__label">
                     Digite seu Nome
                     <input
                         required
@@ -39,7 +39,7 @@ function UpdateDialog({
                         onChange={(e) => setName(e.target.value)}
                     />
                 </label>
-                <label className="dialogLabel">
+                <label className="dialog__label">
                     Digite seu e-mail
                     <input
                         required
@@ -47,7 +47,7 @@ function UpdateDialog({
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </label>
-                <label className="dialogLabel">
+                <label className="dialog__label">
                     Digite seu WhatsApp com DDD
                     <input
                         required
@@ -57,7 +57,7 @@ function UpdateDialog({
                 </label>
                 <button
                     type='submit'
-                    className='dialogButtonSub'
+                    className='dialog__button--sub'
                     onClick={handleSubmit}
                 >
                     Continuar inscrição {'>>'}

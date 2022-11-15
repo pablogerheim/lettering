@@ -7,7 +7,7 @@ function BonusExclusivos() {
       <div className="bonus__box">
         <div className="bonus__content">
           <img
-            className="bonus__img"
+            className="bonus__image"
             alt="bonus01"
             src="https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_BONUS-V01-01.jpg"
           />
@@ -31,7 +31,7 @@ function BonusExclusivos() {
         </div>
         <div className="bonus__content">
           <img
-            className="bonus__img"
+            className="bonus__image"
             alt="bonus01"
             src="https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_BONUS-V01-02.jpg"
           />

@@ -5,13 +5,13 @@
   align-items: center;
 }
 
-.bonus__img {
+.bonus__image {
   height: 260px;
   border-radius: 5px;
   transition: all 0.5s;
 }
 
-.bonus__content:hover .bonus__img {
+.bonus__content:hover .bonus__image {
   transform: scale(1.05);
 }
 
@@ -51,7 +51,7 @@
   .bonus__box {
     display: flex;
   }
-  .bonus__img {
+  .bonus__image {
     height: 360px;
     margin: 5%;
   }

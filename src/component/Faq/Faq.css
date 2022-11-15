@@ -7,37 +7,37 @@
 }
 
 .faq__content {
-    display: flex;
-    align-items: center;
-}
-
-.faq__conteudo {
     border: 1px solid var(--primary-color);
     padding: 12px;
     margin: 16px 0;
+    
 }
 
-.faq__resposta {
+.faq__content:hover {
+    cursor:pointer;
+}
+
+.faq__answer {
     max-height: 0;
     text-align: left;
     font-size: .9rem;
     opacity: 0;
-    transition: opacity 1s linear, max-height 0.9s linear;
+    transition: opacity 0.8s linear, max-height 0.7s linear;
 }
 
-.faq__resposta__aberta {
+.faq__answer__open {
     max-height: 200px;
     opacity: 1;
 }
 
-.faq__pergunta {
+.faq__question {
     color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     text-align: left;
 }
 
-.faq__pergunta__ativa {
+.faq__question__active {
     color: var(--secondary-color);
 }
 

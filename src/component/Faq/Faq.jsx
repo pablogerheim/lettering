@@ -23,18 +23,22 @@ function Faq() {
           {perguntas.map((pergunta, index) => (
             <div
               key={index}
-              className="faq__conteudo"
+              className="faq__content"
               onClick={() => escondeEmostraPergunta(pergunta.id)}
             >
-              <p className={`faq__pergunta ${perguntaEscondida(pergunta.id) ? "faq__pergunta__ativa" : ""}`}>
+              <p
+                className={`faq__question ${
+                  perguntaEscondida(pergunta.id) ? "faq__question__active" : ""
+                }`}
+              >
                 {pergunta.button}
-                <span className="faq__pergunta__icone">
+                <span className="faq__question__icone">
                   {perguntaEscondida(pergunta.id) ? "-" : "+"}{" "}
                 </span>
               </p>
               <p
-                className={`faq__resposta ${
-                  perguntaEscondida(pergunta.id) ? "faq__resposta__aberta" : ""
+                className={`faq__answer ${
+                  perguntaEscondida(pergunta.id) ? "faq__answer__open" : ""
                 }`}
               >
                 {pergunta.text}

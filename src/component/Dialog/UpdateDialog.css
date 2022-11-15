@@ -1,4 +1,4 @@
-.dialogStyles {
+.dialog {
     width: 90%;
     margin: 0 auto;
     position: fixed;
@@ -12,7 +12,12 @@
     flex-direction: column;
 }
 
-.dialogCloseButtonStyles {
+.dialog__head {
+    background-color: var(--primary-color-alt);
+}
+
+
+.dialog__close--button {
     background-color: var(--primary-color-alt);
     padding: 3px 8px;
     cursor: pointer;
@@ -28,33 +33,30 @@
     font-weight: 700;
 }
 
-.dialog {
+.dialog__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5%;
 }
 
-.dialogLabel {
+.dialog__label {
     display: flex;
     flex-direction: column;
     padding: 2%;
 }
 
-.dialogHead {
-    background-color: var(--primary-color-alt);
-}
 
-.dialogTitle {
+.dialog__title {
     color: #fff;
 }
 
-.dialogText {
+.dialog__text {
     color: #fff;
     padding: 0 5% 5% 5%;
 }
 
-.dialogButtonSub {
+.dialog__button--sub {
     background-color: var( --secondary-color);
     margin: 5% 0% 0% 0%;
     border-radius: 5px;
@@ -67,7 +69,7 @@
 }
 
 @media screen and (min-width: 935px) {
-    .dialogStyles {
+    .dialog {
         width: 40%;
     }
 }
