@@ -17,7 +17,7 @@ import FacaArtes from "./component/FacaArtes/FacaArtes";
 import Professora from "./component/Professora/Professora";
 import BannerAgora from "./component/BannerAgora/BannerAgora.jsx";
 import Garantia from "./component/Garantia/Garantia";
-import DuvidasFrequentes from "./component/DuvidasFrequentes/DuvidasFrequentes";
+import Faq from "./component/Faq/Faq";
 import WhatsApp from "./component/WhatsApp/WhatsApp";
 import Footer from "./component/Footer/Footer";
 
@@ -49,7 +49,7 @@ function App() {
         <Professora />
         <BannerAgora setOpen={setOpen} />
         <Garantia />
-        <DuvidasFrequentes />
+        <Faq />
         <WhatsApp />
         <Footer />
       </main>
