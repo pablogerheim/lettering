@@ -14,7 +14,7 @@
     transition: all .3s;
     max-width: 520px;
     text-align: center;
-    padding: 0 0.5em;
+    padding: 0 4px;
 }
 
 .primary__button:hover,
