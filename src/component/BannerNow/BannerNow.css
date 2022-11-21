@@ -1,4 +1,4 @@
-.banner-agora {
+.banner-now {
     background-color: var(--primary-color-alt);
     display: flex;
     flex-direction: column;
@@ -6,11 +6,11 @@
     padding: 2em;
 }
 
-.banner-agora h3{
+.banner-now h3{
     color: #FAFAFA;
 }
 
-.banner-agora h3 span {
+.banner-now h3 span {
     color: var(--secondary-color);
     display: block;
     font-size: 4.38rem;

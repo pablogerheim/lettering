@@ -15,7 +15,7 @@ import Vacancy from "./component/Vacancy/Vacancy";
 import Testimony from "./component/Testimony/Testimony";
 import MakeArts from "./component/MakeArts/MakeArts";
 import Teacher from "./component/Teacher/Teacher";
-import BannerAgora from "./component/BannerAgora/BannerAgora.jsx";
+import BannerNow from "./component/BannerNow/BannerNow.jsx";
 import Garantia from "./component/Garantia/Garantia";
 import Faq from "./component/Faq/Faq";
 import WhatsApp from "./component/WhatsApp/WhatsApp";
@@ -47,7 +47,7 @@ function App() {
         <Testimony />
         <MakeArts />
         <Teacher />
-        <BannerAgora setOpen={setOpen} />
+        <BannerNow setOpen={setOpen} />
         <Garantia />
         <Faq />
         <WhatsApp />

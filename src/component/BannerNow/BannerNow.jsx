@@ -1,9 +1,9 @@
-import "./BannerAgora.css";
+import "./BannerNow.css";
 import Button from "../Button/Button";
 
-function BannerAgora({ setOpen }) {
+function BannerNow({ setOpen }) {
   return (
-    <section className="banner-agora">
+    <section className="banner-now">
       <h3>
         Inscreva-se agora no Curso Lettering na Prática
         <span>Em até 12x 19,66</span>
@@ -16,4 +16,4 @@ function BannerAgora({ setOpen }) {
   );
 }
 
-export default BannerAgora;
+export default BannerNow;
