@@ -1,9 +1,9 @@
-.comunidade {
+.community {
   display: flex;
   padding: 2em;
 }
 
-.comunidade img {
+.community img {
   width: 338px;
   height: auto;
   align-self: center;
@@ -11,12 +11,12 @@
 
 }
 
-.comunidade__content {
+.community__content {
   display: flex;
   flex-direction: column;
 }
 
-.comunidade__text {
+.community__text {
   align-self: center;
   display: flex;
   justify-content: center;
@@ -26,20 +26,20 @@
 }
 
 @media screen and (min-width: 640px) {
-  .comunidade img {
+  .community img {
     width: 460px;
   }
 
-  .comunidade {
+  .community {
     padding: 2em;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .comunidade__content {
+  .community__content {
     flex-direction: row;
   }
-  .comunidade img {
+  .community img {
     width: 560px;
     margin: 2em;
   }

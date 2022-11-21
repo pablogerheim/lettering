@@ -8,7 +8,7 @@ import ForYou from "./component/ForYou/ForYou";
 import Pillars from "./component/Pillars/Pillars";
 import Students from "./component/Students/Students";
 import BannerLearn from "./component/BannerLearn/BannerLearn.jsx";
-import Comunidade from "./component/Comunidade/Comunidade";
+import Community from "./component/Community/Community";
 import Conteudo from "./component/Conteudo/Conteudo";
 import BonusExclusivos from "./component/BonusExclusivos/BonusExclusivos";
 import SuaVaga from "./component/SuaVaga/SuaVaga";
@@ -40,7 +40,7 @@ function App() {
         <Pillars />
         <Students />
         <BannerLearn />
-        <Comunidade />
+        <Community />
         <Conteudo />
         <BonusExclusivos />
         <SuaVaga setOpen={setOpen} />

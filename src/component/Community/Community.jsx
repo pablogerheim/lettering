@@ -1,16 +1,16 @@
-import "./Comunidade.css";
+import "./Community.css";
 
-function Comunidade() {
+function Community() {
   return (
-    <section className="comunidade">
-      <div className="comunidade__content">
+    <section className="community">
+      <div className="community__content">
         <img
           alt="notebook"
-          src="https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_comunidade-V01-1-1024x678.jpg"
+          src="https://camilapegado.com.br/wp-content/webp-express/webp-images/uploads/2022/05/IMG-LNP_VENDAS01_comunidade-V01-1-1024x678.jpg.webp"
         />
-        <div className="comunidade__text">
+        <div className="community__text">
           <h3 className="align-left">
-            Junte-se a Comunidade de Lettering que mais cresce no Brasil.
+            Junte-se a comunidade de Lettering que mais cresce no Brasil.
           </h3>
           <p className="align-left">
             Receba no grupo vip de alunos desafios mensais de lettering, e um
@@ -23,4 +23,4 @@ function Comunidade() {
   );
 }
 
-export default Comunidade;
+export default Community;
