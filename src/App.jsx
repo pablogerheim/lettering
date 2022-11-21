@@ -5,7 +5,7 @@ import UpdateDialog from "./component/Dialog/UpdateDialog";
 import Intro from "./component/Intro/Intro";
 import Operation from "./component/Operation/Operation";
 import ForYou from "./component/ForYou/ForYou";
-import Pilares from "./component/Pilares/Pilares";
+import Pillars from "./component/Pillars/Pillars";
 import Students from "./component/Students/Students";
 import BannerAprender from "./component/BannerAprender/BannerAprender.jsx";
 import Comunidade from "./component/Comunidade/Comunidade";
@@ -37,7 +37,7 @@ function App() {
         <Intro />
         <Operation />
         <ForYou />
-        <Pilares />
+        <Pillars />
         <Students />
         <BannerAprender />
         <Comunidade />

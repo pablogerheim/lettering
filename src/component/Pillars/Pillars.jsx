@@ -1,10 +1,10 @@
-import "./Pilares.css";
+import "./Pillars.css";
 
-function Pilares() {
+function Pillars() {
   return (
-    <section className="pilares">
-      <div className="pilares__content">
-        <h3>Esses são os 3 pilares para aprender o desenho das letras.</h3>
+    <section className="pillars">
+      <div className="pillars__content">
+        <h3>Esses são os 3 pillars para aprender o desenho das letras.</h3>
         <p>
           Você não precisa saber desenhar, ou ter materiais caros para começar.
         </p>
@@ -17,4 +17,4 @@ function Pilares() {
   );
 }
 
-export default Pilares;
+export default Pillars;
