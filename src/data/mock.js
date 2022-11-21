@@ -24,7 +24,7 @@ const receba = [
   "70% de Desconto",
 ];
 
-const professora = [
+const teacher = [
   "Prazer, eu sou Camila Pegado, artista profissional há 6 anos e professora de lettering.",
   "Eu vou te mostrar que fazer um lettering lindo e profissional não precisa ser complicado. Não vou te encher de teorias, aqui você aprende  a desenhar na prática.",
   "Centenas de alunos já conseguiram, você também vai conseguir.",
@@ -160,7 +160,7 @@ const SubstanceItems = [
 export {
   forYou,
   receba,
-  professora,
+  teacher,
   perguntas,
   url,
   SubstanceItems,

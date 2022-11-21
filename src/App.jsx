@@ -14,7 +14,7 @@ import BonusExclusivos from "./component/BonusExclusivos/BonusExclusivos";
 import Vacancy from "./component/Vacancy/Vacancy";
 import Testimony from "./component/Testimony/Testimony";
 import MakeArts from "./component/MakeArts/MakeArts";
-import Professora from "./component/Professora/Professora";
+import Teacher from "./component/Teacher/Teacher";
 import BannerAgora from "./component/BannerAgora/BannerAgora.jsx";
 import Garantia from "./component/Garantia/Garantia";
 import Faq from "./component/Faq/Faq";
@@ -46,7 +46,7 @@ function App() {
         <Vacancy setOpen={setOpen} />
         <Testimony />
         <MakeArts />
-        <Professora />
+        <Teacher />
         <BannerAgora setOpen={setOpen} />
         <Garantia />
         <Faq />

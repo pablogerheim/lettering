@@ -1,4 +1,4 @@
-.professora {
+.teacher {
     background-image: url("../../img/mobile/MOBILE-BG-LNP_VENDAS01_BIO-V00.jpg.webp");
     background-position: top center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     padding: 2em;
 }
 
-.professora__content {
+.teacher__content {
     background-color: rgb(250, 250, 250, 0.7);
     display: flex;
     flex-direction: column;
@@ -19,23 +19,23 @@
     padding: 1em 0;
 }
 
-.professora__map {
+.teacher__map {
     padding: 1em;
 }
 
 @media screen and (min-width: 640px) {
-    .professora__content {
+    .teacher__content {
         max-width: 640px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .professora {
+    .teacher {
         background-image: url("../../img/BG-LNP_VENDAS01_BIO-V09.jpg.webp");
         padding: 2em;
         background-size: auto;
     }
-    .professora__content {
+    .teacher__content {
         max-width: 420px;
         margin-top: 15em;
     }
