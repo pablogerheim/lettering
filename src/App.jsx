@@ -11,7 +11,7 @@ import BannerLearn from "./component/BannerLearn/BannerLearn.jsx";
 import Community from "./component/Community/Community";
 import Substance from "./component/Substance/Substance";
 import BonusExclusivos from "./component/BonusExclusivos/BonusExclusivos";
-import SuaVaga from "./component/SuaVaga/SuaVaga";
+import Vacancy from "./component/Vacancy/Vacancy";
 import Depoimento from "./component/Depoimento/Depoimento";
 import FacaArtes from "./component/FacaArtes/FacaArtes";
 import Professora from "./component/Professora/Professora";
@@ -43,7 +43,7 @@ function App() {
         <Community />
         <Substance />
         <BonusExclusivos />
-        <SuaVaga setOpen={setOpen} />
+        <Vacancy setOpen={setOpen} />
         <Depoimento />
         <FacaArtes />
         <Professora />

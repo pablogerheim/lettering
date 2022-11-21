@@ -1,29 +1,29 @@
-import "./SuaVaga.css";
-import Button from "../../component/Button/Button";
+import "./Vacancy.css";
+import Button from "../Button/Button";
 import { receba } from "../../data/mock.js";
 import { BsCheckLg } from 'react-icons/bs';
 import React from "react";
 
-function SuaVaga({setOpen}) {
+function Vacancy({setOpen}) {
   return (
-    <section className="suaVaga" id="garantirVaga">
-      <div className="suaVaga__box">
+    <section className="vacancy" id="garantirVaga">
+      <div className="vacancy__box">
         <p>
-          <b className="suaVaga__title">GARANTA SUA VAGA</b>
+          <b className="vacancy__title">GARANTA SUA VAGA</b>
           <span></span>
         </p>
         <p>
-          <b className="suaVaga__subtitle">COMECE AGORA E RECEBA</b>
+          <b className="vacancy__subtitle">COMECE AGORA E RECEBA</b>
           <span></span>
         </p>
-        <div className="suaVaga__guarantees">
+        <div className="vacancy__guarantees">
           {receba.map((r, index) => (
-            <div key={index} className="suaVaga__map">
-              <div className="suaVaga__icon">
-                {" "}
-                <BsCheckLg />{" "}
+            <div key={index} className="vacancy__map">
+              <div className="vacancy__icon">
+                
+                <BsCheckLg />
               </div>
-              <p className="suaVaga__text"> {r} </p>
+              <p className="vacancy__text"> {r} </p>
             </div>
           ))}
         </div>
@@ -39,8 +39,8 @@ function SuaVaga({setOpen}) {
 
         <h3>Ou R$ 197 à vista</h3>
         <h3>ESSA OFERTE LIMITADA POR VAGAS</h3>
-        <div className="suaVaga__footer">
-          <span className="suaVaga__title">VAGAS 77% PREENCHIDAS</span>
+        <div className="vacancy__footer">
+          <span className="vacancy__title">VAGAS 77% PREENCHIDAS</span>
           <img
             alt="seguro"
             src="https://camilapegado.com.br/wp-content/uploads/2022/05/Card-pagamento-V1.jpg"
@@ -51,4 +51,4 @@ function SuaVaga({setOpen}) {
   );
 }
 
-export default SuaVaga;
+export default Vacancy;

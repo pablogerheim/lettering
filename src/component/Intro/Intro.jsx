@@ -7,11 +7,11 @@ function Intro() {
     <div className="intro__content">
       <h1>
         <span className="yellow">Curso de Lettering:</span> Aprenda a
-        fazer artes lindas<span className="yellow"> em até 30 dias</span>{" "}
+        fazer artes lindas<span className="yellow"> em até 30 dias</span>
         mesmo que você seja iniciante.
       </h1>
       <h2 className="padding-y colorDarkBlue">
-        Junte-se a mais de 1.500 alunos. Assista o vídeo até o{" "}
+        Junte-se a mais de 1.500 alunos. Assista o vídeo até o
         <b className="colorDarkBlue">FINAL</b> e veja como começar!
       </h2>
       <iframe

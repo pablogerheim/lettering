@@ -1,4 +1,4 @@
-.suaVaga {
+.vacancy {
     background-color: var(--primary-color-alt);
     display: flex;
     flex-direction: column;
@@ -6,34 +6,34 @@
     padding: 2em;
 }
 
-.suaVaga__box {
+.vacancy__box {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 2em 1em;
 }
 
-.suaVaga__guarantees {
+.vacancy__guarantees {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 1em;
 }
 
-.suaVaga__title {
+.vacancy__title {
     font-weight: 800;
     line-height: 1.4em;
     margin: 8px 0;
 }
 
-.suaVaga__subtitle {
+.vacancy__subtitle {
     font-weight: 500;
 }
 
-.suaVaga__map {
+.vacancy__map {
     display: flex;
 }
 
-.suaVaga__icon {
+.vacancy__icon {
     color: var(--secondary-color);
     width: 16px;
     height: 16px;
@@ -43,12 +43,12 @@
     font-size: 2.188rem;
 }
 
-.suaVaga__text {
+.vacancy__text {
     color: var( --primary-color);
     font-weight: 500;
     margin: 0.3em 0.1em;
 }
-.suaVaga__footer{
+.vacancy__footer{
     display: flex;
     flex-direction: column;
     align-items: center;

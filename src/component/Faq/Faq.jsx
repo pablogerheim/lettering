@@ -33,7 +33,7 @@ function Faq() {
               >
                 {pergunta.button}
                 <span className="faq__question__icone">
-                  {perguntaEscondida(pergunta.id) ? "-" : "+"}{" "}
+                  {perguntaEscondida(pergunta.id) ? "-" : "+"}
                 </span>
               </p>
               <p
