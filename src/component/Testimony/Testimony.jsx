@@ -1,10 +1,10 @@
-import "./Depoimento.css";
+import "./Testimony.css";
 
-function Depoimento() {
+function Testimony() {
   return (
-    <section className="depoimento">
+    <section className="testimony">
     <h3>Depoimento dos Alunos</h3>
-    <div className="depoimento__content">
+    <div className="testimony__content">
       <iframe
         className="video"
         src="https://www.youtube.com/embed/lGr-Ko8iAog"
@@ -34,4 +34,4 @@ function Depoimento() {
   );
 }
 
-export default Depoimento;
+export default Testimony;
