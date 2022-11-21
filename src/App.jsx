@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import UpdateDialog from "./component/Dialog/UpdateDialog";
 import Intro from "./component/Intro/Intro";
-import ComoFunciona from "./component/ComoFunciona/ComoFunciona";
+import Operation from "./component/Operation/Operation";
 import ParaVoce from "./component/ParaVoce/ParaVoce";
 import Pilares from "./component/Pilares/Pilares";
 import Students from "./component/Students/Students";
@@ -35,7 +35,7 @@ function App() {
       )}
       <main className={!open ? "direction" : "opacity"}>
         <Intro />
-        <ComoFunciona />
+        <Operation />
         <ParaVoce />
         <Pilares />
         <Students />

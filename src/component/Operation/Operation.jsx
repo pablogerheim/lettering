@@ -1,9 +1,9 @@
-import "./ComoFunciona.css";
+import "./Operation.css";
 
-function ComoFunciona() {
+function Operation() {
   return (
-    <section className="comoFunciona">
-    <div className="comoFunciona__content">
+    <section className="operation">
+    <div className="operation__content">
       <h3>Como funciona o curso</h3>
       <p>
         Esse é um treinamento passo a passo, onde você aprende lettering
@@ -16,5 +16,5 @@ function ComoFunciona() {
   );
 }
 
-export default ComoFunciona;
+export default Operation;
 
