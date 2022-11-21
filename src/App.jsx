@@ -9,7 +9,7 @@ import Pillars from "./component/Pillars/Pillars";
 import Students from "./component/Students/Students";
 import BannerLearn from "./component/BannerLearn/BannerLearn.jsx";
 import Community from "./component/Community/Community";
-import Conteudo from "./component/Conteudo/Conteudo";
+import Substance from "./component/Substance/Substance";
 import BonusExclusivos from "./component/BonusExclusivos/BonusExclusivos";
 import SuaVaga from "./component/SuaVaga/SuaVaga";
 import Depoimento from "./component/Depoimento/Depoimento";
@@ -41,7 +41,7 @@ function App() {
         <Students />
         <BannerLearn />
         <Community />
-        <Conteudo />
+        <Substance />
         <BonusExclusivos />
         <SuaVaga setOpen={setOpen} />
         <Depoimento />

@@ -1,13 +1,13 @@
-import "./Conteudo.css";
+import "./Substance.css";
 import CardText from "../CardText/CardText" 
-import {ConteudoItems} from "../../data/mock"
+import {SubstanceItems} from "../../data/mock"
 import { useState } from "react"
 
-function Conteudo() {
-  const [conteudo, setConteudo] = useState(ConteudoItems)
+function Substance() {
+  const [substance, setSubstance] = useState(SubstanceItems)
 
   const toggleCard = index => {
-    setConteudo(conteudo.map((item, i) => {
+    setSubstance(substance.map((item, i) => {
       if (i === index) {
         item.open = !item.open
       }
@@ -17,14 +17,14 @@ function Conteudo() {
   }
 
   return (
-    <section className="conteudo">
+    <section className="substance">
       <h3>Conteúdo do Curso</h3>
-      <p className="conteudo__subtitle">
+      <p className="substance__subtitle">
         Cada detalhe foi pensado para que mesmo sendo iniciante você consiga
         fazer artes lindas e profissionais.
       </p>
-      <div className="conteudo__content">
-        {conteudo.map((item) => (
+      <div className="substance__content">
+        {substance.map((item) => (
           <CardText card={item} setOpen={toggleCard}/>
         ))}
       </div>
@@ -32,7 +32,7 @@ function Conteudo() {
   );
 }
 
-export default Conteudo;
+export default Substance;
 
 
 

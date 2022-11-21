@@ -84,7 +84,7 @@ const imgCamila = [
   {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP-VENDAS01-ARTE-CAMILA-05.jpg", alt: "IMG-LNP-VENDAS01-ARTE-CAMILA-05.jpg"}
 ];
 
-const ConteudoItems = [
+const SubstanceItems = [
   {
     id: 0,
     img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01_MODULOS-01.jpg",
@@ -163,7 +163,7 @@ export {
   professora,
   perguntas,
   url,
-  ConteudoItems,
+  SubstanceItems,
   imgStudents,
   imgCamila,
 };
