@@ -13,7 +13,7 @@ import Substance from "./component/Substance/Substance";
 import BonusExclusivos from "./component/BonusExclusivos/BonusExclusivos";
 import Vacancy from "./component/Vacancy/Vacancy";
 import Testimony from "./component/Testimony/Testimony";
-import FacaArtes from "./component/FacaArtes/FacaArtes";
+import MakeArts from "./component/MakeArts/MakeArts";
 import Professora from "./component/Professora/Professora";
 import BannerAgora from "./component/BannerAgora/BannerAgora.jsx";
 import Garantia from "./component/Garantia/Garantia";
@@ -45,7 +45,7 @@ function App() {
         <BonusExclusivos />
         <Vacancy setOpen={setOpen} />
         <Testimony />
-        <FacaArtes />
+        <MakeArts />
         <Professora />
         <BannerAgora setOpen={setOpen} />
         <Garantia />
