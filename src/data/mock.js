@@ -1,4 +1,4 @@
-const paraVoce = [
+const forYou = [
   {
     text: "Nunca fez lettering mas tem vontade de aprender.",
     icon: "icone-01-V2.svg",
@@ -158,7 +158,7 @@ const ConteudoItems = [
 ];
 
 export {
-  paraVoce,
+  forYou,
   receba,
   professora,
   perguntas,

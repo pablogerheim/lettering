@@ -1,12 +1,12 @@
-import "./ParaVoce.css";
+import "./ForYou.css";
 
-function ParaVoce() {
+function ForYou() {
   return (
-    <section className="paraVoce">
-      <h3 className="paraVoce-h3">O Curso de Lettering é para você que:</h3>
-      <div className="paraVoce__content">
-        <div className="paraVoce__card-to-you">
-          <div className="paraVoce__icon">
+    <section className="forYou">
+      <h3 className="forYou-h3">O Curso de Lettering é para você que:</h3>
+      <div className="forYou__content">
+        <div className="forYou__card-to-you">
+          <div className="forYou__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="a"
@@ -48,8 +48,8 @@ function ParaVoce() {
           </div>
           <p>Nunca fez lettering mas tem vontade de aprender.</p>
         </div>
-        <div className="paraVoce__card-to-you">
-          <div className="paraVoce__icon">
+        <div className="forYou__card-to-you">
+          <div className="forYou__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="a"
@@ -66,8 +66,8 @@ function ParaVoce() {
           </div>
           <p>Já desenha mas quer aprimorar suas técnicas.</p>
         </div>
-        <div className="paraVoce__card-to-you">
-          <div className="paraVoce__icon">
+        <div className="forYou__card-to-you">
+          <div className="forYou__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="a"
@@ -82,8 +82,8 @@ function ParaVoce() {
           </div>
           <p>Deseja despertar o seu potencial artístico.</p>
         </div>
-        <div className="paraVoce__card-to-you">
-          <div className="paraVoce__icon">
+        <div className="forYou__card-to-you">
+          <div className="forYou__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="a"
@@ -108,8 +108,8 @@ function ParaVoce() {
           </div>
           <p>Deseja conhecer um novo hobbie.</p>
         </div>
-        <div className="paraVoce__card-to-you">
-          <div className="paraVoce__icon last">
+        <div className="forYou__card-to-you">
+          <div className="forYou__icon last">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="a"
@@ -135,4 +135,4 @@ function ParaVoce() {
   );
 }
 
-export default ParaVoce;
+export default ForYou;
