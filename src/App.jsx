@@ -16,7 +16,7 @@ import Testimony from "./component/Testimony/Testimony";
 import MakeArts from "./component/MakeArts/MakeArts";
 import Teacher from "./component/Teacher/Teacher";
 import BannerNow from "./component/BannerNow/BannerNow.jsx";
-import Garantia from "./component/Garantia/Garantia";
+import Guarantees from "./component/Guarantees/Guarantees";
 import Faq from "./component/Faq/Faq";
 import WhatsApp from "./component/WhatsApp/WhatsApp";
 import Footer from "./component/Footer/Footer";
@@ -48,7 +48,7 @@ function App() {
         <MakeArts />
         <Teacher />
         <BannerNow setOpen={setOpen} />
-        <Garantia />
+        <Guarantees />
         <Faq />
         <WhatsApp />
         <Footer />
