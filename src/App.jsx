@@ -6,7 +6,7 @@ import Intro from "./component/Intro/Intro";
 import ComoFunciona from "./component/ComoFunciona/ComoFunciona";
 import ParaVoce from "./component/ParaVoce/ParaVoce";
 import Pilares from "./component/Pilares/Pilares";
-import Alunos from "./component/Alunos/Alunos";
+import Students from "./component/Students/Students";
 import BannerAprender from "./component/BannerAprender/BannerAprender.jsx";
 import Comunidade from "./component/Comunidade/Comunidade";
 import Conteudo from "./component/Conteudo/Conteudo";
@@ -38,7 +38,7 @@ function App() {
         <ComoFunciona />
         <ParaVoce />
         <Pilares />
-        <Alunos />
+        <Students />
         <BannerAprender />
         <Comunidade />
         <Conteudo />

@@ -69,7 +69,7 @@ const perguntas = [
 ];
 const url =
   "https://player.vimeo.com/video/689846899?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&h=6e221cecfe#t=00h00m15s";
-const imgAlunos = [
+const imgStudents = [
     {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_1.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_1.jpg"},
     {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_2.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_2.jpg"},
     {img: "https://camilapegado.com.br/wp-content/uploads/2022/05/IMG-LNP_VENDAS01-ARTE-ALUNOS_3.jpg", alt: "IMG-LNP_VENDAS01-ARTE-ALUNOS_3.jpg"},
@@ -164,6 +164,6 @@ export {
   perguntas,
   url,
   ConteudoItems,
-  imgAlunos,
+  imgStudents,
   imgCamila,
 };
