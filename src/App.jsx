@@ -7,7 +7,7 @@ import Operation from "./component/Operation/Operation";
 import ForYou from "./component/ForYou/ForYou";
 import Pillars from "./component/Pillars/Pillars";
 import Students from "./component/Students/Students";
-import BannerAprender from "./component/BannerAprender/BannerAprender.jsx";
+import BannerLearn from "./component/BannerLearn/BannerLearn.jsx";
 import Comunidade from "./component/Comunidade/Comunidade";
 import Conteudo from "./component/Conteudo/Conteudo";
 import BonusExclusivos from "./component/BonusExclusivos/BonusExclusivos";
@@ -39,7 +39,7 @@ function App() {
         <ForYou />
         <Pillars />
         <Students />
-        <BannerAprender />
+        <BannerLearn />
         <Comunidade />
         <Conteudo />
         <BonusExclusivos />

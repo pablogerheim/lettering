@@ -1,9 +1,9 @@
-import "./BannerAprender.css";
+import "./BannerLearn.css";
 import Button from "../Button/Button";
 
-function BannerAprender() {
+function BannerLearn() {
   return (
-    <section className="banner-aprender">
+    <section className="banner-learn">
       <h3>
         Inscreva-se agora no Curso Lettering na Prática e desperte a artista
         dentro de você.
@@ -13,4 +13,4 @@ function BannerAprender() {
   );
 }
 
-export default BannerAprender;
+export default BannerLearn;

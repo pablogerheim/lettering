@@ -1,4 +1,4 @@
-.banner-aprender {
+.banner-learn {
     background-color: var(--primary-color-alt);
     display: flex;
     flex-direction: column;
@@ -7,16 +7,16 @@
     padding: 2em;
 }
 
-.banner-aprender h3 {
+.banner-learn h3 {
     color: #fff;
     max-width: 640px;
 }
 
 @media screen and (min-width: 1024px) {
-    .banner-aprender {
+    .banner-learn {
         flex-direction: row;
     }
-    .banner-aprender h3 {
+    .banner-learn h3 {
         text-align: left;
         margin: 0 1em;
     }
